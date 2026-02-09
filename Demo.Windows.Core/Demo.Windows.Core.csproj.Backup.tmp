@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<TargetFrameworks>net8.0-windows;net9.0-windows</TargetFrameworks>
+	<AccelerateBuildsInVisualStudio>True</AccelerateBuildsInVisualStudio>
+	<ImplicitUsings>enable</ImplicitUsings>
+	<Nullable>enable</Nullable>
+    <OutputType>Library</OutputType>
+  
+	<UseWPF>True</UseWPF>
+	<TargetFrameworks>net8.0-windows</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+    <PackageReference Include="Fluent.Ribbon" Version="11.0.1" />
+    <PackageReference Include="MaterialDesignThemes" Version="5.2.1" />
+    <PackageReference Include="WPFLocalizeExtension" Version="3.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Demo.Language\Demo.Language.csproj" />
+    <ProjectReference Include="..\Demo.Windows.Icons\Demo.Windows.Icons.csproj" />
+    <ProjectReference Include="..\FuX.Core\FuX.Core.csproj" />
+  </ItemGroup>
+
+</Project>

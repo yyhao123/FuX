@@ -1,0 +1,11 @@
+D:\project\FNet\Fnet.Unility\Demo.AutoTest.Core\obj\Debug\net9.0\Demo.AutoTest.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\project\FNet\Fnet.Unility\Demo.AutoTest.Core\obj\Debug\net9.0\Demo.AutoTest.Core.AssemblyInfoInputs.cache
+D:\project\FNet\Fnet.Unility\Demo.AutoTest.Core\obj\Debug\net9.0\Demo.AutoTest.Core.AssemblyInfo.cs
+D:\project\FNet\Fnet.Unility\Demo.AutoTest.Core\obj\Debug\net9.0\Demo.AutoTest.Core.csproj.CoreCompileInputs.cache
+D:\project\FNet\Fnet.Unility\Demo.AutoTest.Core\bin\Debug\net9.0\Demo.AutoTest.Core.deps.json
+D:\project\FNet\Fnet.Unility\Demo.AutoTest.Core\bin\Debug\net9.0\Demo.AutoTest.Core.dll
+D:\project\FNet\Fnet.Unility\Demo.AutoTest.Core\bin\Debug\net9.0\Demo.AutoTest.Core.pdb
+D:\project\FNet\Fnet.Unility\Demo.AutoTest.Core\obj\Debug\net9.0\Demo.AutoTest.Core.dll
+D:\project\FNet\Fnet.Unility\Demo.AutoTest.Core\obj\Debug\net9.0\refint\Demo.AutoTest.Core.dll
+D:\project\FNet\Fnet.Unility\Demo.AutoTest.Core\obj\Debug\net9.0\Demo.AutoTest.Core.pdb
+D:\project\FNet\Fnet.Unility\Demo.AutoTest.Core\obj\Debug\net9.0\ref\Demo.AutoTest.Core.dll

@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0-windows;net9.0-windows</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Demo.Communication\Demo.Communication.csproj" />
+    <ProjectReference Include="..\Demo.Model\Demo.Model.csproj" />
+    <ProjectReference Include="..\Demo.Windows.Controls\Demo.Windows.Controls.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="communication\com\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SqlSugarCore" Version="5.1.4.197" />
+  </ItemGroup>
+
+</Project>

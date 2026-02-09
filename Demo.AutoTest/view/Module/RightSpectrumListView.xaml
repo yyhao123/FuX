@@ -1,0 +1,127 @@
+﻿<UserControl
+    x:Class="Demo.AutoTest.view.Module.RightSpectrumListView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:b="http://schemas.microsoft.com/xaml/behaviors"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:data="clr-namespace:Demo.AutoTest.data"
+    xmlns:FuX="https://FuX.top"
+    xmlns:lang="https://FuX.top/language"
+    xmlns:local="clr-namespace:Demo.AutoTest.view.Module"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf;assembly=MaterialDesignThemes.Wpf"
+    lang:ResxLocalizationProvider.DefaultAssembly="Demo.AutoTest.Language"
+    lang:ResxLocalizationProvider.DefaultDictionary="Language"
+    mc:Ignorable="d">
+    <Grid>
+        <GroupBox
+            Grid.Row="0"
+            Margin="5"
+            Padding="0"
+            wpf:ElevationAssist.Elevation="Dp2"
+            wpf:GroupBoxAssist.HeaderPadding="7"
+            Style="{StaticResource MaterialDesignCardGroupBox}">
+            <!--<HeaderedContentControl.HeaderTemplate>
+                <DataTemplate>
+                    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition Width="auto" />
+                        </Grid.ColumnDefinitions>
+                        <wpf:PackIcon Grid.Column="0" wpf:PackIcon.Kind="Tools" />
+                        <TextBlock Grid.Column="1" Margin="5,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" Text="{lang:Loc 节点}" />
+                    </Grid>
+                </DataTemplate>
+            </HeaderedContentControl.HeaderTemplate>-->
+            <TreeView
+                Margin="5,5,0,5"
+                Background="#00FFFFFF"
+                ItemsSource="{Binding Node}">
+                <FrameworkElement.ContextMenu>
+                    <ContextMenu VerticalContentAlignment="Center" Style="{StaticResource MaterialDesignContextMenu}">
+                        <MenuItem Header="{lang:Loc 移除}" Style="{StaticResource MaterialDesignMenuItem}">
+                            <b:Interaction.Triggers>
+                                <b:EventTrigger EventName="Click">
+                                    <FuX:EventCommand Command="{Binding ContextMenu_Subscribe}" />
+                                </b:EventTrigger>
+                            </b:Interaction.Triggers>
+                            <MenuItem.Icon>
+                                <StackPanel Orientation="Horizontal">
+                                    <Image
+                                        Width="15"
+                                        Height="15"
+                                        VerticalAlignment="Center"
+                                        Source="{DynamicResource Subscribe}" />
+                                </StackPanel>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Header="{lang:Loc 移除所有}" Style="{StaticResource MaterialDesignMenuItem}">
+                            <b:Interaction.Triggers>
+                                <b:EventTrigger EventName="Click">
+                                    <FuX:EventCommand Command="{Binding ContextMenu_Subscribe}" />
+                                </b:EventTrigger>
+                            </b:Interaction.Triggers>
+                            <MenuItem.Icon>
+                                <StackPanel Orientation="Horizontal">
+                                    <Image
+                                        Width="15"
+                                        Height="15"
+                                        VerticalAlignment="Center"
+                                        Source="{DynamicResource UnSubscribe}" />
+                                </StackPanel>
+                            </MenuItem.Icon>
+                        </MenuItem>
+
+                    </ContextMenu>
+                </FrameworkElement.ContextMenu>
+                <b:Interaction.Triggers>
+                    <b:EventTrigger EventName="SelectedItemChanged">
+                        <FuX:EventCommand Command="{Binding TreeView_SelectedItemChanged}" />
+                    </b:EventTrigger>
+                    <b:EventTrigger EventName="PreviewMouseRightButtonDown">
+                        <FuX:EventCommand Command="{Binding TreeView_PreviewMouseRightButtonDown}" />
+                    </b:EventTrigger>
+                    <FuX:RoutedEventTrigger RoutedEventName="TreeViewItem.Expanded">
+                        <FuX:EventCommand Command="{Binding TreeViewItem_Expanded}" />
+                    </FuX:RoutedEventTrigger>
+                </b:Interaction.Triggers>
+                <ItemsControl.ItemTemplate>
+                    <HierarchicalDataTemplate DataType="{x:Type data:SpectrumNodeBrowseStructuralBody}" ItemsSource="{Binding Children}">
+                        <StackPanel Margin="0,5,0,5">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Image
+                                    Grid.Column="0"
+                                    Width="11"
+                                    Height="11"
+                                    Margin="0,0,5,0"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    Source="{Binding Icon}"
+                                    Stretch="Fill" />
+                                <TextBlock
+                                    Grid.Column="1"
+                                    Margin="0,0,5,0"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    FontSize="13"
+                                    Text="{Binding Name}" />
+                                <TextBlock
+                                    Grid.Column="2"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    FontSize="11"
+                                    Text="{Binding Count}" />
+                            </Grid>
+                        </StackPanel>
+                    </HierarchicalDataTemplate>
+                </ItemsControl.ItemTemplate>
+            </TreeView>
+        </GroupBox>
+
+    </Grid>
+</UserControl>

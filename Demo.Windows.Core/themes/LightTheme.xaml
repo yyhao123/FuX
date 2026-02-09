@@ -1,0 +1,37 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sv="clr-namespace:Demo.Windows.Core"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+    xmlns:ui="http://materialdesigninxaml.net/winfx/xaml/themes">
+    <ResourceDictionary.MergedDictionaries>
+        <!--  1️⃣ MaterialDesign Colors  -->
+        <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.Grey.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Secondary/MaterialDesignColor.Amber.xaml" />
+
+        <!--  2️⃣ MaterialDesign Theme  -->
+        <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+
+        <!--  3️⃣ MaterialDesign Defaults  -->
+        <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesign3.Defaults.xaml" />
+
+        <!--  4️⃣ Fluent.Ribbon 主题（必须放在 MaterialDesign 之后）  -->
+        <ResourceDictionary Source="pack://application:,,,/Fluent;component/Themes/Generic.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/Fluent;component/Themes/Styles.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/Fluent;component/Themes/Themes/Light.Blue.xaml" />
+
+        <!--  5️⃣ 你的应用资源  -->
+        <ResourceDictionary Source="pack://application:,,,/Demo.Windows.Icons;component/Icons.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/Demo.Windows.Core;component/resources/WindowIcon.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/Demo.Windows.Core;component/themes/style/Light.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/Demo.Windows.Core;component/themes/WindowBase.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/Demo.Windows.Controls;component/filterDataGrid/themes/Generic.xaml" />
+
+    </ResourceDictionary.MergedDictionaries>
+    <Style
+        x:Key="{x:Type sv:WindowBase}"
+        BasedOn="{StaticResource WindowBaseStyle}"
+        TargetType="{x:Type sv:WindowBase}" />
+
+    
+</ResourceDictionary>

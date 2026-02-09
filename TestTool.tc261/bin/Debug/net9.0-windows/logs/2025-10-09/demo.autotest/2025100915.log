@@ -1,0 +1,351 @@
+2025-10-09 15:01:52.845 | ERR | Demo.Windows.Core
+注入窗口异常：获取服务异常：找不到资源“images/blue.png”。
+
+   at Demo.Windows.Core.handler.InjectionWpf.Window[T,M](Boolean cache) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Core\handler\InjectionWpf.cs:line 96
+   at TestTool.tc261.App.OnStartup(Object sender, StartupEventArgs e) in E:\Project2\Driver-master\Fnet.Unility\TestTool.tc261\App.xaml.cs:line 40
+   at System.Windows.Application.<.ctor>b__1_0(Object unused)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+System.Exception: 注入窗口异常：获取服务异常：找不到资源“images/blue.png”。
+ ---> System.Exception: 获取服务异常：找不到资源“images/blue.png”。
+ ---> System.IO.IOException: 找不到资源“images/blue.png”。
+   at MS.Internal.AppModel.ResourcePart.GetStreamCore(FileMode mode, FileAccess access)
+   at System.IO.Packaging.PackagePart.GetStream(FileMode mode, FileAccess access)
+   at MS.Internal.IO.Packaging.PackagePartExtensions.GetSeekableStream(PackagePart packPart, FileMode mode, FileAccess access)
+   at System.IO.Packaging.PackWebResponse.CachedResponse.GetResponseStream()
+   at System.Windows.Media.Imaging.BitmapDecoder.SetupDecoderFromUriOrStream(Uri uri, Stream stream, BitmapCacheOption cacheOption, Guid& clsId, Boolean& isOriginalWritable, Stream& uriStream, UnmanagedMemoryStream& unmanagedMemoryStream, SafeFileHandle& safeFilehandle)
+   at System.Windows.Media.Imaging.BitmapDecoder.CreateFromUriOrStream(Uri baseUri, Uri uri, Stream stream, BitmapCreateOptions createOptions, BitmapCacheOption cacheOption, RequestCachePolicy uriCachePolicy, Boolean insertInDecoderCache)
+   at System.Windows.Media.Imaging.BitmapDecoder.Create(Uri bitmapUri, BitmapCreateOptions createOptions, BitmapCacheOption cacheOption)
+   at Fluent.Converters.ObjectToImageConverter.CreateImageSource(Uri imageUri, Visual targetVisual, Size desiredSize) in C:\projects\fluent-ribbon\Fluent.Ribbon\Converters\ObjectToImageConverter.cs:line 469
+   at Fluent.Converters.ObjectToImageConverter.CreateImageSource(String imagePath, Visual targetVisual, Size desiredSize) in C:\projects\fluent-ribbon\Fluent.Ribbon\Converters\ObjectToImageConverter.cs:line 462
+   at Fluent.Converters.ObjectToImageConverter.CreateImageSource(Object value, Visual targetVisual, Size desiredSize) in C:\projects\fluent-ribbon\Fluent.Ribbon\Converters\ObjectToImageConverter.cs:line 376
+   at Fluent.Converters.ObjectToImageConverter.CreateFrozenImageSource(Object value, Visual targetVisual, Size desiredSize) in C:\projects\fluent-ribbon\Fluent.Ribbon\Converters\ObjectToImageConverter.cs:line 334
+   at Fluent.Converters.ObjectToImageConverter.Convert(Object value, Visual targetVisual, Size desiredSize, Type targetType) in C:\projects\fluent-ribbon\Fluent.Ribbon\Converters\ObjectToImageConverter.cs:line 283
+   at Fluent.Converters.ObjectToImageConverter.Convert(Object value, Type targetType, Object parameter, CultureInfo culture) in C:\projects\fluent-ribbon\Fluent.Ribbon\Converters\ObjectToImageConverter.cs:line 142
+   at TestTool.tc261.GalleryDataItemViewModel..ctor(String icon, String iconLarge, String text, String group) in E:\Project2\Driver-master\Fnet.Unility\TestTool.tc261\GalleryDataItemViewModel.cs:line 35
+   at TestTool.tc261.GalleryDataItemViewModel.Create(String icon, String iconLarge, String text, String group) in E:\Project2\Driver-master\Fnet.Unility\TestTool.tc261\GalleryDataItemViewModel.cs:line 28
+   at TestTool.tc261.TestViewModel..ctor() in E:\Project2\Driver-master\Fnet.Unility\TestTool.tc261\TestViewModel.cs:line 17
+   at InvokeStub_TestViewModel..ctor(Object, Object, IntPtr*)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Fnet.Unility.InjectionHandler.GetService[T]() in E:\Project2\Driver-master\Fnet.Unility\Fnet.Unility\InjectionHandler.cs:line 166
+   --- End of inner exception stack trace ---
+   at Fnet.Unility.InjectionHandler.GetService[T]() in E:\Project2\Driver-master\Fnet.Unility\Fnet.Unility\InjectionHandler.cs:line 170
+   at Demo.Windows.Core.handler.InjectionWpf.Window[T,M](Boolean cache) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Core\handler\InjectionWpf.cs:line 78
+   --- End of inner exception stack trace ---
+   at Demo.Windows.Core.handler.InjectionWpf.Window[T,M](Boolean cache) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Core\handler\InjectionWpf.cs:line 96
+   at TestTool.tc261.App.OnStartup(Object sender, StartupEventArgs e) in E:\Project2\Driver-master\Fnet.Unility\TestTool.tc261\App.xaml.cs:line 40
+   at System.Windows.Application.<.ctor>b__1_0(Object unused)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+2025-10-09 15:02:10.795 | ERR | A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread. (No loaded DialogHost instances.)
+System.AggregateException: A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread. (No loaded DialogHost instances.)
+ ---> System.Exception: No loaded DialogHost instances.
+ ---> System.InvalidOperationException: No loaded DialogHost instances.
+   at MaterialDesignThemes.Wpf.DialogHost.GetInstance(Object dialogIdentifier)
+   at MaterialDesignThemes.Wpf.DialogHost.Show(Object content, Object dialogIdentifier, DialogOpenedEventHandler openedEventHandler, DialogClosingEventHandler closingEventHandler, DialogClosedEventHandler closedEventHandler)
+   at Demo.Windows.Controls.message.MessageBox.Show(String content, String title, MessageBoxButton btn, MessageBoxImage img) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Controls\message\MessageBox.cs:line 128
+   --- End of inner exception stack trace ---
+   at Demo.Windows.Controls.message.MessageBox.Show(String content, String title, MessageBoxButton btn, MessageBoxImage img) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Controls\message\MessageBox.cs:line 132
+   at TestTool.tc261.App.<>c__DisplayClass7_0.<<HandleException>b__0>d.MoveNext() in E:\Project2\Driver-master\Fnet.Unility\TestTool.tc261\App.xaml.cs:line 152
+   --- End of inner exception stack trace ---
+2025-10-09 15:02:19.772 | ERR | A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread. (No loaded DialogHost instances.)
+System.AggregateException: A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread. (No loaded DialogHost instances.)
+ ---> System.Exception: No loaded DialogHost instances.
+ ---> System.InvalidOperationException: No loaded DialogHost instances.
+   at MaterialDesignThemes.Wpf.DialogHost.GetInstance(Object dialogIdentifier)
+   at MaterialDesignThemes.Wpf.DialogHost.Show(Object content, Object dialogIdentifier, DialogOpenedEventHandler openedEventHandler, DialogClosingEventHandler closingEventHandler, DialogClosedEventHandler closedEventHandler)
+   at Demo.Windows.Controls.message.MessageBox.Show(String content, String title, MessageBoxButton btn, MessageBoxImage img) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Controls\message\MessageBox.cs:line 128
+   --- End of inner exception stack trace ---
+   at Demo.Windows.Controls.message.MessageBox.Show(String content, String title, MessageBoxButton btn, MessageBoxImage img) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Controls\message\MessageBox.cs:line 132
+   at TestTool.tc261.App.<>c__DisplayClass7_0.<<HandleException>b__0>d.MoveNext() in E:\Project2\Driver-master\Fnet.Unility\TestTool.tc261\App.xaml.cs:line 152
+   --- End of inner exception stack trace ---
+2025-10-09 15:02:31.627 | ERR | A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread. (No loaded DialogHost instances.)
+System.AggregateException: A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread. (No loaded DialogHost instances.)
+ ---> System.Exception: No loaded DialogHost instances.
+ ---> System.InvalidOperationException: No loaded DialogHost instances.
+   at MaterialDesignThemes.Wpf.DialogHost.GetInstance(Object dialogIdentifier)
+   at MaterialDesignThemes.Wpf.DialogHost.Show(Object content, Object dialogIdentifier, DialogOpenedEventHandler openedEventHandler, DialogClosingEventHandler closingEventHandler, DialogClosedEventHandler closedEventHandler)
+   at Demo.Windows.Controls.message.MessageBox.Show(String content, String title, MessageBoxButton btn, MessageBoxImage img) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Controls\message\MessageBox.cs:line 128
+   --- End of inner exception stack trace ---
+   at Demo.Windows.Controls.message.MessageBox.Show(String content, String title, MessageBoxButton btn, MessageBoxImage img) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Controls\message\MessageBox.cs:line 132
+   at TestTool.tc261.App.<>c__DisplayClass7_0.<<HandleException>b__0>d.MoveNext() in E:\Project2\Driver-master\Fnet.Unility\TestTool.tc261\App.xaml.cs:line 152
+   --- End of inner exception stack trace ---
+2025-10-09 15:02:41.631 | ERR | A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread. (No loaded DialogHost instances.)
+System.AggregateException: A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread. (No loaded DialogHost instances.)
+ ---> System.Exception: No loaded DialogHost instances.
+ ---> System.InvalidOperationException: No loaded DialogHost instances.
+   at MaterialDesignThemes.Wpf.DialogHost.GetInstance(Object dialogIdentifier)
+   at MaterialDesignThemes.Wpf.DialogHost.Show(Object content, Object dialogIdentifier, DialogOpenedEventHandler openedEventHandler, DialogClosingEventHandler closingEventHandler, DialogClosedEventHandler closedEventHandler)
+   at Demo.Windows.Controls.message.MessageBox.Show(String content, String title, MessageBoxButton btn, MessageBoxImage img) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Controls\message\MessageBox.cs:line 128
+   --- End of inner exception stack trace ---
+   at Demo.Windows.Controls.message.MessageBox.Show(String content, String title, MessageBoxButton btn, MessageBoxImage img) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Controls\message\MessageBox.cs:line 132
+   at TestTool.tc261.App.<>c__DisplayClass7_0.<<HandleException>b__0>d.MoveNext() in E:\Project2\Driver-master\Fnet.Unility\TestTool.tc261\App.xaml.cs:line 152
+   --- End of inner exception stack trace ---
+2025-10-09 15:03:01.613 | ERR | A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread. (No loaded DialogHost instances.)
+System.AggregateException: A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread. (No loaded DialogHost instances.)
+ ---> System.Exception: No loaded DialogHost instances.
+ ---> System.InvalidOperationException: No loaded DialogHost instances.
+   at MaterialDesignThemes.Wpf.DialogHost.GetInstance(Object dialogIdentifier)
+   at MaterialDesignThemes.Wpf.DialogHost.Show(Object content, Object dialogIdentifier, DialogOpenedEventHandler openedEventHandler, DialogClosingEventHandler closingEventHandler, DialogClosedEventHandler closedEventHandler)
+   at Demo.Windows.Controls.message.MessageBox.Show(String content, String title, MessageBoxButton btn, MessageBoxImage img) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Controls\message\MessageBox.cs:line 128
+   --- End of inner exception stack trace ---
+   at Demo.Windows.Controls.message.MessageBox.Show(String content, String title, MessageBoxButton btn, MessageBoxImage img) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Controls\message\MessageBox.cs:line 132
+   at TestTool.tc261.App.<>c__DisplayClass7_0.<<HandleException>b__0>d.MoveNext() in E:\Project2\Driver-master\Fnet.Unility\TestTool.tc261\App.xaml.cs:line 152
+   --- End of inner exception stack trace ---
+2025-10-09 15:03:11.627 | ERR | A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread. (No loaded DialogHost instances.)
+System.AggregateException: A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread. (No loaded DialogHost instances.)
+ ---> System.Exception: No loaded DialogHost instances.
+ ---> System.InvalidOperationException: No loaded DialogHost instances.
+   at MaterialDesignThemes.Wpf.DialogHost.GetInstance(Object dialogIdentifier)
+   at MaterialDesignThemes.Wpf.DialogHost.Show(Object content, Object dialogIdentifier, DialogOpenedEventHandler openedEventHandler, DialogClosingEventHandler closingEventHandler, DialogClosedEventHandler closedEventHandler)
+   at Demo.Windows.Controls.message.MessageBox.Show(String content, String title, MessageBoxButton btn, MessageBoxImage img) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Controls\message\MessageBox.cs:line 128
+   --- End of inner exception stack trace ---
+   at Demo.Windows.Controls.message.MessageBox.Show(String content, String title, MessageBoxButton btn, MessageBoxImage img) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Controls\message\MessageBox.cs:line 132
+   at TestTool.tc261.App.<>c__DisplayClass7_0.<<HandleException>b__0>d.MoveNext() in E:\Project2\Driver-master\Fnet.Unility\TestTool.tc261\App.xaml.cs:line 152
+   --- End of inner exception stack trace ---
+2025-10-09 15:03:28.618 | ERR | A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread. (No loaded DialogHost instances.)
+System.AggregateException: A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread. (No loaded DialogHost instances.)
+ ---> System.Exception: No loaded DialogHost instances.
+ ---> System.InvalidOperationException: No loaded DialogHost instances.
+   at MaterialDesignThemes.Wpf.DialogHost.GetInstance(Object dialogIdentifier)
+   at MaterialDesignThemes.Wpf.DialogHost.Show(Object content, Object dialogIdentifier, DialogOpenedEventHandler openedEventHandler, DialogClosingEventHandler closingEventHandler, DialogClosedEventHandler closedEventHandler)
+   at Demo.Windows.Controls.message.MessageBox.Show(String content, String title, MessageBoxButton btn, MessageBoxImage img) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Controls\message\MessageBox.cs:line 128
+   --- End of inner exception stack trace ---
+   at Demo.Windows.Controls.message.MessageBox.Show(String content, String title, MessageBoxButton btn, MessageBoxImage img) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Controls\message\MessageBox.cs:line 132
+   at TestTool.tc261.App.<>c__DisplayClass7_0.<<HandleException>b__0>d.MoveNext() in E:\Project2\Driver-master\Fnet.Unility\TestTool.tc261\App.xaml.cs:line 152
+   --- End of inner exception stack trace ---
+2025-10-09 15:03:40.729 | ERR | A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread. (No loaded DialogHost instances.)
+System.AggregateException: A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread. (No loaded DialogHost instances.)
+ ---> System.Exception: No loaded DialogHost instances.
+ ---> System.InvalidOperationException: No loaded DialogHost instances.
+   at MaterialDesignThemes.Wpf.DialogHost.GetInstance(Object dialogIdentifier)
+   at MaterialDesignThemes.Wpf.DialogHost.Show(Object content, Object dialogIdentifier, DialogOpenedEventHandler openedEventHandler, DialogClosingEventHandler closingEventHandler, DialogClosedEventHandler closedEventHandler)
+   at Demo.Windows.Controls.message.MessageBox.Show(String content, String title, MessageBoxButton btn, MessageBoxImage img) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Controls\message\MessageBox.cs:line 128
+   --- End of inner exception stack trace ---
+   at Demo.Windows.Controls.message.MessageBox.Show(String content, String title, MessageBoxButton btn, MessageBoxImage img) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Controls\message\MessageBox.cs:line 132
+   at TestTool.tc261.App.<>c__DisplayClass7_0.<<HandleException>b__0>d.MoveNext() in E:\Project2\Driver-master\Fnet.Unility\TestTool.tc261\App.xaml.cs:line 152
+   --- End of inner exception stack trace ---
+2025-10-09 15:03:53.877 | ERR | A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread. (No loaded DialogHost instances.)
+System.AggregateException: A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread. (No loaded DialogHost instances.)
+ ---> System.Exception: No loaded DialogHost instances.
+ ---> System.InvalidOperationException: No loaded DialogHost instances.
+   at MaterialDesignThemes.Wpf.DialogHost.GetInstance(Object dialogIdentifier)
+   at MaterialDesignThemes.Wpf.DialogHost.Show(Object content, Object dialogIdentifier, DialogOpenedEventHandler openedEventHandler, DialogClosingEventHandler closingEventHandler, DialogClosedEventHandler closedEventHandler)
+   at Demo.Windows.Controls.message.MessageBox.Show(String content, String title, MessageBoxButton btn, MessageBoxImage img) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Controls\message\MessageBox.cs:line 128
+   --- End of inner exception stack trace ---
+   at Demo.Windows.Controls.message.MessageBox.Show(String content, String title, MessageBoxButton btn, MessageBoxImage img) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Controls\message\MessageBox.cs:line 132
+   at TestTool.tc261.App.<>c__DisplayClass7_0.<<HandleException>b__0>d.MoveNext() in E:\Project2\Driver-master\Fnet.Unility\TestTool.tc261\App.xaml.cs:line 152
+   --- End of inner exception stack trace ---
+2025-10-09 15:04:03.098 | ERR | A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread. (No loaded DialogHost instances.)
+System.AggregateException: A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread. (No loaded DialogHost instances.)
+ ---> System.Exception: No loaded DialogHost instances.
+ ---> System.InvalidOperationException: No loaded DialogHost instances.
+   at MaterialDesignThemes.Wpf.DialogHost.GetInstance(Object dialogIdentifier)
+   at MaterialDesignThemes.Wpf.DialogHost.Show(Object content, Object dialogIdentifier, DialogOpenedEventHandler openedEventHandler, DialogClosingEventHandler closingEventHandler, DialogClosedEventHandler closedEventHandler)
+   at Demo.Windows.Controls.message.MessageBox.Show(String content, String title, MessageBoxButton btn, MessageBoxImage img) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Controls\message\MessageBox.cs:line 128
+   --- End of inner exception stack trace ---
+   at Demo.Windows.Controls.message.MessageBox.Show(String content, String title, MessageBoxButton btn, MessageBoxImage img) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Controls\message\MessageBox.cs:line 132
+   at TestTool.tc261.App.<>c__DisplayClass7_0.<<HandleException>b__0>d.MoveNext() in E:\Project2\Driver-master\Fnet.Unility\TestTool.tc261\App.xaml.cs:line 152
+   --- End of inner exception stack trace ---
+2025-10-09 15:04:17.410 | ERR | A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread. (No loaded DialogHost instances.)
+System.AggregateException: A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread. (No loaded DialogHost instances.)
+ ---> System.Exception: No loaded DialogHost instances.
+ ---> System.InvalidOperationException: No loaded DialogHost instances.
+   at MaterialDesignThemes.Wpf.DialogHost.GetInstance(Object dialogIdentifier)
+   at MaterialDesignThemes.Wpf.DialogHost.Show(Object content, Object dialogIdentifier, DialogOpenedEventHandler openedEventHandler, DialogClosingEventHandler closingEventHandler, DialogClosedEventHandler closedEventHandler)
+   at Demo.Windows.Controls.message.MessageBox.Show(String content, String title, MessageBoxButton btn, MessageBoxImage img) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Controls\message\MessageBox.cs:line 128
+   --- End of inner exception stack trace ---
+   at Demo.Windows.Controls.message.MessageBox.Show(String content, String title, MessageBoxButton btn, MessageBoxImage img) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Controls\message\MessageBox.cs:line 132
+   at TestTool.tc261.App.<>c__DisplayClass7_0.<<HandleException>b__0>d.MoveNext() in E:\Project2\Driver-master\Fnet.Unility\TestTool.tc261\App.xaml.cs:line 152
+   --- End of inner exception stack trace ---
+2025-10-09 15:04:36.025 | ERR | A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread. (No loaded DialogHost instances.)
+System.AggregateException: A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread. (No loaded DialogHost instances.)
+ ---> System.Exception: No loaded DialogHost instances.
+ ---> System.InvalidOperationException: No loaded DialogHost instances.
+   at MaterialDesignThemes.Wpf.DialogHost.GetInstance(Object dialogIdentifier)
+   at MaterialDesignThemes.Wpf.DialogHost.Show(Object content, Object dialogIdentifier, DialogOpenedEventHandler openedEventHandler, DialogClosingEventHandler closingEventHandler, DialogClosedEventHandler closedEventHandler)
+   at Demo.Windows.Controls.message.MessageBox.Show(String content, String title, MessageBoxButton btn, MessageBoxImage img) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Controls\message\MessageBox.cs:line 128
+   --- End of inner exception stack trace ---
+   at Demo.Windows.Controls.message.MessageBox.Show(String content, String title, MessageBoxButton btn, MessageBoxImage img) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Controls\message\MessageBox.cs:line 132
+   at TestTool.tc261.App.<>c__DisplayClass7_0.<<HandleException>b__0>d.MoveNext() in E:\Project2\Driver-master\Fnet.Unility\TestTool.tc261\App.xaml.cs:line 152
+   --- End of inner exception stack trace ---
+2025-10-09 15:04:43.264 | ERR | A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread. (No loaded DialogHost instances.)
+System.AggregateException: A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread. (No loaded DialogHost instances.)
+ ---> System.Exception: No loaded DialogHost instances.
+ ---> System.InvalidOperationException: No loaded DialogHost instances.
+   at MaterialDesignThemes.Wpf.DialogHost.GetInstance(Object dialogIdentifier)
+   at MaterialDesignThemes.Wpf.DialogHost.Show(Object content, Object dialogIdentifier, DialogOpenedEventHandler openedEventHandler, DialogClosingEventHandler closingEventHandler, DialogClosedEventHandler closedEventHandler)
+   at Demo.Windows.Controls.message.MessageBox.Show(String content, String title, MessageBoxButton btn, MessageBoxImage img) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Controls\message\MessageBox.cs:line 128
+   --- End of inner exception stack trace ---
+   at Demo.Windows.Controls.message.MessageBox.Show(String content, String title, MessageBoxButton btn, MessageBoxImage img) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Controls\message\MessageBox.cs:line 132
+   at TestTool.tc261.App.<>c__DisplayClass7_0.<<HandleException>b__0>d.MoveNext() in E:\Project2\Driver-master\Fnet.Unility\TestTool.tc261\App.xaml.cs:line 152
+   --- End of inner exception stack trace ---
+2025-10-09 15:05:05.067 | ERR | Demo.Windows.Core
+注入窗口异常：获取服务异常：找不到资源“images/blue.png”。
+
+   at Demo.Windows.Core.handler.InjectionWpf.Window[T,M](Boolean cache) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Core\handler\InjectionWpf.cs:line 96
+   at TestTool.tc261.App.OnStartup(Object sender, StartupEventArgs e) in E:\Project2\Driver-master\Fnet.Unility\TestTool.tc261\App.xaml.cs:line 40
+   at System.Windows.Application.<.ctor>b__1_0(Object unused)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+System.Exception: 注入窗口异常：获取服务异常：找不到资源“images/blue.png”。
+ ---> System.Exception: 获取服务异常：找不到资源“images/blue.png”。
+ ---> System.IO.IOException: 找不到资源“images/blue.png”。
+   at MS.Internal.AppModel.ResourcePart.GetStreamCore(FileMode mode, FileAccess access)
+   at System.IO.Packaging.PackagePart.GetStream(FileMode mode, FileAccess access)
+   at MS.Internal.IO.Packaging.PackagePartExtensions.GetSeekableStream(PackagePart packPart, FileMode mode, FileAccess access)
+   at System.IO.Packaging.PackWebResponse.CachedResponse.GetResponseStream()
+   at System.Windows.Media.Imaging.BitmapDecoder.SetupDecoderFromUriOrStream(Uri uri, Stream stream, BitmapCacheOption cacheOption, Guid& clsId, Boolean& isOriginalWritable, Stream& uriStream, UnmanagedMemoryStream& unmanagedMemoryStream, SafeFileHandle& safeFilehandle)
+   at System.Windows.Media.Imaging.BitmapDecoder.CreateFromUriOrStream(Uri baseUri, Uri uri, Stream stream, BitmapCreateOptions createOptions, BitmapCacheOption cacheOption, RequestCachePolicy uriCachePolicy, Boolean insertInDecoderCache)
+   at System.Windows.Media.Imaging.BitmapDecoder.Create(Uri bitmapUri, BitmapCreateOptions createOptions, BitmapCacheOption cacheOption)
+   at Fluent.Converters.ObjectToImageConverter.CreateImageSource(Uri imageUri, Visual targetVisual, Size desiredSize) in C:\projects\fluent-ribbon\Fluent.Ribbon\Converters\ObjectToImageConverter.cs:line 469
+   at Fluent.Converters.ObjectToImageConverter.CreateImageSource(String imagePath, Visual targetVisual, Size desiredSize) in C:\projects\fluent-ribbon\Fluent.Ribbon\Converters\ObjectToImageConverter.cs:line 462
+   at Fluent.Converters.ObjectToImageConverter.CreateImageSource(Object value, Visual targetVisual, Size desiredSize) in C:\projects\fluent-ribbon\Fluent.Ribbon\Converters\ObjectToImageConverter.cs:line 376
+   at Fluent.Converters.ObjectToImageConverter.CreateFrozenImageSource(Object value, Visual targetVisual, Size desiredSize) in C:\projects\fluent-ribbon\Fluent.Ribbon\Converters\ObjectToImageConverter.cs:line 334
+   at Fluent.Converters.ObjectToImageConverter.Convert(Object value, Visual targetVisual, Size desiredSize, Type targetType) in C:\projects\fluent-ribbon\Fluent.Ribbon\Converters\ObjectToImageConverter.cs:line 283
+   at Fluent.Converters.ObjectToImageConverter.Convert(Object value, Type targetType, Object parameter, CultureInfo culture) in C:\projects\fluent-ribbon\Fluent.Ribbon\Converters\ObjectToImageConverter.cs:line 142
+   at TestTool.tc261.GalleryDataItemViewModel..ctor(String icon, String iconLarge, String text, String group) in E:\Project2\Driver-master\Fnet.Unility\TestTool.tc261\GalleryDataItemViewModel.cs:line 35
+   at TestTool.tc261.GalleryDataItemViewModel.Create(String icon, String iconLarge, String text, String group) in E:\Project2\Driver-master\Fnet.Unility\TestTool.tc261\GalleryDataItemViewModel.cs:line 28
+   at TestTool.tc261.TestViewModel..ctor() in E:\Project2\Driver-master\Fnet.Unility\TestTool.tc261\TestViewModel.cs:line 17
+   at InvokeStub_TestViewModel..ctor(Object, Object, IntPtr*)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Fnet.Unility.InjectionHandler.GetService[T]() in E:\Project2\Driver-master\Fnet.Unility\Fnet.Unility\InjectionHandler.cs:line 166
+   --- End of inner exception stack trace ---
+   at Fnet.Unility.InjectionHandler.GetService[T]() in E:\Project2\Driver-master\Fnet.Unility\Fnet.Unility\InjectionHandler.cs:line 170
+   at Demo.Windows.Core.handler.InjectionWpf.Window[T,M](Boolean cache) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Core\handler\InjectionWpf.cs:line 78
+   --- End of inner exception stack trace ---
+   at Demo.Windows.Core.handler.InjectionWpf.Window[T,M](Boolean cache) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Core\handler\InjectionWpf.cs:line 96
+   at TestTool.tc261.App.OnStartup(Object sender, StartupEventArgs e) in E:\Project2\Driver-master\Fnet.Unility\TestTool.tc261\App.xaml.cs:line 40
+   at System.Windows.Application.<.ctor>b__1_0(Object unused)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+2025-10-09 15:05:22.773 | ERR | A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread. (No loaded DialogHost instances.)
+System.AggregateException: A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread. (No loaded DialogHost instances.)
+ ---> System.Exception: No loaded DialogHost instances.
+ ---> System.InvalidOperationException: No loaded DialogHost instances.
+   at MaterialDesignThemes.Wpf.DialogHost.GetInstance(Object dialogIdentifier)
+   at MaterialDesignThemes.Wpf.DialogHost.Show(Object content, Object dialogIdentifier, DialogOpenedEventHandler openedEventHandler, DialogClosingEventHandler closingEventHandler, DialogClosedEventHandler closedEventHandler)
+   at Demo.Windows.Controls.message.MessageBox.Show(String content, String title, MessageBoxButton btn, MessageBoxImage img) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Controls\message\MessageBox.cs:line 128
+   --- End of inner exception stack trace ---
+   at Demo.Windows.Controls.message.MessageBox.Show(String content, String title, MessageBoxButton btn, MessageBoxImage img) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Controls\message\MessageBox.cs:line 132
+   at TestTool.tc261.App.<>c__DisplayClass7_0.<<HandleException>b__0>d.MoveNext() in E:\Project2\Driver-master\Fnet.Unility\TestTool.tc261\App.xaml.cs:line 152
+   --- End of inner exception stack trace ---
+2025-10-09 15:05:27.491 | ERR | A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread. (No loaded DialogHost instances.)
+System.AggregateException: A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread. (No loaded DialogHost instances.)
+ ---> System.Exception: No loaded DialogHost instances.
+ ---> System.InvalidOperationException: No loaded DialogHost instances.
+   at MaterialDesignThemes.Wpf.DialogHost.GetInstance(Object dialogIdentifier)
+   at MaterialDesignThemes.Wpf.DialogHost.Show(Object content, Object dialogIdentifier, DialogOpenedEventHandler openedEventHandler, DialogClosingEventHandler closingEventHandler, DialogClosedEventHandler closedEventHandler)
+   at Demo.Windows.Controls.message.MessageBox.Show(String content, String title, MessageBoxButton btn, MessageBoxImage img) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Controls\message\MessageBox.cs:line 128
+   --- End of inner exception stack trace ---
+   at Demo.Windows.Controls.message.MessageBox.Show(String content, String title, MessageBoxButton btn, MessageBoxImage img) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Controls\message\MessageBox.cs:line 132
+   at TestTool.tc261.App.<>c__DisplayClass7_0.<<HandleException>b__0>d.MoveNext() in E:\Project2\Driver-master\Fnet.Unility\TestTool.tc261\App.xaml.cs:line 152
+   --- End of inner exception stack trace ---
+2025-10-09 15:05:38.497 | ERR | A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread. (No loaded DialogHost instances.)
+System.AggregateException: A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread. (No loaded DialogHost instances.)
+ ---> System.Exception: No loaded DialogHost instances.
+ ---> System.InvalidOperationException: No loaded DialogHost instances.
+   at MaterialDesignThemes.Wpf.DialogHost.GetInstance(Object dialogIdentifier)
+   at MaterialDesignThemes.Wpf.DialogHost.Show(Object content, Object dialogIdentifier, DialogOpenedEventHandler openedEventHandler, DialogClosingEventHandler closingEventHandler, DialogClosedEventHandler closedEventHandler)
+   at Demo.Windows.Controls.message.MessageBox.Show(String content, String title, MessageBoxButton btn, MessageBoxImage img) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Controls\message\MessageBox.cs:line 128
+   --- End of inner exception stack trace ---
+   at Demo.Windows.Controls.message.MessageBox.Show(String content, String title, MessageBoxButton btn, MessageBoxImage img) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Controls\message\MessageBox.cs:line 132
+   at TestTool.tc261.App.<>c__DisplayClass7_0.<<HandleException>b__0>d.MoveNext() in E:\Project2\Driver-master\Fnet.Unility\TestTool.tc261\App.xaml.cs:line 152
+   --- End of inner exception stack trace ---
+2025-10-09 15:05:44.462 | ERR | A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread. (No loaded DialogHost instances.)
+System.AggregateException: A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread. (No loaded DialogHost instances.)
+ ---> System.Exception: No loaded DialogHost instances.
+ ---> System.InvalidOperationException: No loaded DialogHost instances.
+   at MaterialDesignThemes.Wpf.DialogHost.GetInstance(Object dialogIdentifier)
+   at MaterialDesignThemes.Wpf.DialogHost.Show(Object content, Object dialogIdentifier, DialogOpenedEventHandler openedEventHandler, DialogClosingEventHandler closingEventHandler, DialogClosedEventHandler closedEventHandler)
+   at Demo.Windows.Controls.message.MessageBox.Show(String content, String title, MessageBoxButton btn, MessageBoxImage img) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Controls\message\MessageBox.cs:line 128
+   --- End of inner exception stack trace ---
+   at Demo.Windows.Controls.message.MessageBox.Show(String content, String title, MessageBoxButton btn, MessageBoxImage img) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Controls\message\MessageBox.cs:line 132
+   at TestTool.tc261.App.<>c__DisplayClass7_0.<<HandleException>b__0>d.MoveNext() in E:\Project2\Driver-master\Fnet.Unility\TestTool.tc261\App.xaml.cs:line 152
+   --- End of inner exception stack trace ---
+2025-10-09 15:06:02.767 | ERR | A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread. (No loaded DialogHost instances.)
+System.AggregateException: A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread. (No loaded DialogHost instances.)
+ ---> System.Exception: No loaded DialogHost instances.
+ ---> System.InvalidOperationException: No loaded DialogHost instances.
+   at MaterialDesignThemes.Wpf.DialogHost.GetInstance(Object dialogIdentifier)
+   at MaterialDesignThemes.Wpf.DialogHost.Show(Object content, Object dialogIdentifier, DialogOpenedEventHandler openedEventHandler, DialogClosingEventHandler closingEventHandler, DialogClosedEventHandler closedEventHandler)
+   at Demo.Windows.Controls.message.MessageBox.Show(String content, String title, MessageBoxButton btn, MessageBoxImage img) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Controls\message\MessageBox.cs:line 128
+   --- End of inner exception stack trace ---
+   at Demo.Windows.Controls.message.MessageBox.Show(String content, String title, MessageBoxButton btn, MessageBoxImage img) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Controls\message\MessageBox.cs:line 132
+   at TestTool.tc261.App.<>c__DisplayClass7_0.<<HandleException>b__0>d.MoveNext() in E:\Project2\Driver-master\Fnet.Unility\TestTool.tc261\App.xaml.cs:line 152
+   --- End of inner exception stack trace ---
+2025-10-09 15:10:27.621 | ERR | Demo.Windows.Core
+注入窗口异常：获取服务异常：找不到资源“images/blue.png”。
+
+   at Demo.Windows.Core.handler.InjectionWpf.Window[T,M](Boolean cache) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Core\handler\InjectionWpf.cs:line 96
+   at TestTool.tc261.App.OnStartup(Object sender, StartupEventArgs e) in E:\Project2\Driver-master\Fnet.Unility\TestTool.tc261\App.xaml.cs:line 40
+   at System.Windows.Application.<.ctor>b__1_0(Object unused)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+System.Exception: 注入窗口异常：获取服务异常：找不到资源“images/blue.png”。
+ ---> System.Exception: 获取服务异常：找不到资源“images/blue.png”。
+ ---> System.IO.IOException: 找不到资源“images/blue.png”。
+   at MS.Internal.AppModel.ResourcePart.GetStreamCore(FileMode mode, FileAccess access)
+   at System.IO.Packaging.PackagePart.GetStream(FileMode mode, FileAccess access)
+   at MS.Internal.IO.Packaging.PackagePartExtensions.GetSeekableStream(PackagePart packPart, FileMode mode, FileAccess access)
+   at System.IO.Packaging.PackWebResponse.CachedResponse.GetResponseStream()
+   at System.Windows.Media.Imaging.BitmapDecoder.SetupDecoderFromUriOrStream(Uri uri, Stream stream, BitmapCacheOption cacheOption, Guid& clsId, Boolean& isOriginalWritable, Stream& uriStream, UnmanagedMemoryStream& unmanagedMemoryStream, SafeFileHandle& safeFilehandle)
+   at System.Windows.Media.Imaging.BitmapDecoder.CreateFromUriOrStream(Uri baseUri, Uri uri, Stream stream, BitmapCreateOptions createOptions, BitmapCacheOption cacheOption, RequestCachePolicy uriCachePolicy, Boolean insertInDecoderCache)
+   at System.Windows.Media.Imaging.BitmapDecoder.Create(Uri bitmapUri, BitmapCreateOptions createOptions, BitmapCacheOption cacheOption)
+   at Fluent.Converters.ObjectToImageConverter.CreateImageSource(Uri imageUri, Visual targetVisual, Size desiredSize) in C:\projects\fluent-ribbon\Fluent.Ribbon\Converters\ObjectToImageConverter.cs:line 469
+   at Fluent.Converters.ObjectToImageConverter.CreateImageSource(String imagePath, Visual targetVisual, Size desiredSize) in C:\projects\fluent-ribbon\Fluent.Ribbon\Converters\ObjectToImageConverter.cs:line 462
+   at Fluent.Converters.ObjectToImageConverter.CreateImageSource(Object value, Visual targetVisual, Size desiredSize) in C:\projects\fluent-ribbon\Fluent.Ribbon\Converters\ObjectToImageConverter.cs:line 376
+   at Fluent.Converters.ObjectToImageConverter.CreateFrozenImageSource(Object value, Visual targetVisual, Size desiredSize) in C:\projects\fluent-ribbon\Fluent.Ribbon\Converters\ObjectToImageConverter.cs:line 334
+   at Fluent.Converters.ObjectToImageConverter.Convert(Object value, Visual targetVisual, Size desiredSize, Type targetType) in C:\projects\fluent-ribbon\Fluent.Ribbon\Converters\ObjectToImageConverter.cs:line 283
+   at Fluent.Converters.ObjectToImageConverter.Convert(Object value, Type targetType, Object parameter, CultureInfo culture) in C:\projects\fluent-ribbon\Fluent.Ribbon\Converters\ObjectToImageConverter.cs:line 142
+   at TestTool.tc261.GalleryDataItemViewModel..ctor(String icon, String iconLarge, String text, String group) in E:\Project2\Driver-master\Fnet.Unility\TestTool.tc261\GalleryDataItemViewModel.cs:line 35
+   at TestTool.tc261.GalleryDataItemViewModel.Create(String icon, String iconLarge, String text, String group) in E:\Project2\Driver-master\Fnet.Unility\TestTool.tc261\GalleryDataItemViewModel.cs:line 28
+   at TestTool.tc261.TestViewModel..ctor() in E:\Project2\Driver-master\Fnet.Unility\TestTool.tc261\TestViewModel.cs:line 17
+   at InvokeStub_TestViewModel..ctor(Object, Object, IntPtr*)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Fnet.Unility.InjectionHandler.GetService[T]() in E:\Project2\Driver-master\Fnet.Unility\Fnet.Unility\InjectionHandler.cs:line 166
+   --- End of inner exception stack trace ---
+   at Fnet.Unility.InjectionHandler.GetService[T]() in E:\Project2\Driver-master\Fnet.Unility\Fnet.Unility\InjectionHandler.cs:line 170
+   at Demo.Windows.Core.handler.InjectionWpf.Window[T,M](Boolean cache) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Core\handler\InjectionWpf.cs:line 78
+   --- End of inner exception stack trace ---
+   at Demo.Windows.Core.handler.InjectionWpf.Window[T,M](Boolean cache) in E:\Project2\Driver-master\Fnet.Unility\Demo.Windows.Core\handler\InjectionWpf.cs:line 96
+   at TestTool.tc261.App.OnStartup(Object sender, StartupEventArgs e) in E:\Project2\Driver-master\Fnet.Unility\TestTool.tc261\App.xaml.cs:line 40
+   at System.Windows.Application.<.ctor>b__1_0(Object unused)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)

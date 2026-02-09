@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="button\ButtonControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="chart\ChartLine.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="combobox\ComboBoxControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="message\OK.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="message\OKCancel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="message\Yes.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="message\YesNo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="pages\CMDManagerView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="pages\ConfigManagerView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="textBox\FTextBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Language.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,3 @@
+2025-07-12 11:00:51.486 | ERR | [ SerialOperate ]( Off 异常 < 在 SerialOperate.cs 文件，第 125 行 > )( GetStatus 异常 < 在 SerialOperate.cs 文件，第 261 行 > ) : 未连接
+2025-07-12 11:01:09.148 | ERR | [ SerialOperate ]( Off 异常 < 在 SerialOperate.cs 文件，第 125 行 > )( GetStatus 异常 < 在 SerialOperate.cs 文件，第 261 行 > ) : 未连接
+2025-07-12 11:03:01.681 | ERR | [ SerialOperate ]( Off 异常 < 在 SerialOperate.cs 文件，第 125 行 > )( GetStatus 异常 < 在 SerialOperate.cs 文件，第 261 行 > ) : 未连接

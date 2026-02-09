@@ -1,0 +1,12 @@
+E:\Project2\FuX\Fnet.Unility\bin\Debug\net9.0\FuX.Unility.deps.json
+E:\Project2\FuX\Fnet.Unility\bin\Debug\net9.0\FuX.Unility.dll
+E:\Project2\FuX\Fnet.Unility\bin\Debug\net9.0\FuX.Unility.pdb
+E:\Project2\FuX\Fnet.Unility\obj\Debug\net9.0\FuX.Unility.csproj.AssemblyReference.cache
+E:\Project2\FuX\Fnet.Unility\obj\Debug\net9.0\FuX.Unility.GeneratedMSBuildEditorConfig.editorconfig
+E:\Project2\FuX\Fnet.Unility\obj\Debug\net9.0\FuX.Unility.AssemblyInfoInputs.cache
+E:\Project2\FuX\Fnet.Unility\obj\Debug\net9.0\FuX.Unility.AssemblyInfo.cs
+E:\Project2\FuX\Fnet.Unility\obj\Debug\net9.0\FuX.Unility.csproj.CoreCompileInputs.cache
+E:\Project2\FuX\Fnet.Unility\obj\Debug\net9.0\FuX.Unility.dll
+E:\Project2\FuX\Fnet.Unility\obj\Debug\net9.0\refint\FuX.Unility.dll
+E:\Project2\FuX\Fnet.Unility\obj\Debug\net9.0\FuX.Unility.pdb
+E:\Project2\FuX\Fnet.Unility\obj\Debug\net9.0\ref\FuX.Unility.dll

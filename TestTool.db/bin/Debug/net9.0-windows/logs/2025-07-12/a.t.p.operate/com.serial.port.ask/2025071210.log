@@ -1,0 +1,1 @@
+2025-07-12 10:59:28.212 | ERR | [ ATPOperate ]( ComSerialPortAsk 异常 < 在 ATPOperate.cs 文件，第 63 行 > ) : [ ATPOperate ]( GetStatus 异常 < 在 ATPOperate.cs 文件，第 173 行 > )

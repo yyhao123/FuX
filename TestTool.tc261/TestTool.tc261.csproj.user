@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="DataGridTest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MinimalWindowSample.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SimView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WindowView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Language.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Language.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

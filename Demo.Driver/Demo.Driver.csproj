@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0-windows;net9.0-windows</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="lib\FTD2XX_NET_v1.2.0\" />
+    <Folder Include="lib\ATP2000SH\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RestSharp" Version="112.1.0" />
+    <PackageReference Include="SharpPcap" Version="6.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Demo.Core\Demo.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="CyUSB">
+      <HintPath>lib\ATP2000SH\CyUSB.dll</HintPath>
+    </Reference>
+    <Reference Include="FTD2XX_NET">
+      <HintPath>lib\FTD2XX_NET_v1.2.0\FTD2XX_NET.dll</HintPath>
+    </Reference>
+    <Reference Include="HexFrameGen">
+      <HintPath>lib\ATP2000SH\HexFrameGen.dll</HintPath>
+    </Reference>
+    <Reference Include="HP2000_wrapper">
+      <HintPath>lib\ATP2000SH\HP2000_wrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Optosky.DeviceDriver">
+      <HintPath>lib\ATP2000SH\Optosky.DeviceDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="OptoskyConnector">
+      <HintPath>lib\ATP2000SH\OptoskyConnector.dll</HintPath>
+    </Reference>
+    <Reference Include="OptoskyToolKit">
+      <HintPath>lib\ATP2000SH\OptoskyToolKit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

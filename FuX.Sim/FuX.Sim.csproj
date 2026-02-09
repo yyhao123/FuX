@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	   <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FuX.Core\FuX.Core.csproj" />
+    <ProjectReference Include="..\FuX.Model\FuX.Model.csproj" />
+    <ProjectReference Include="..\FuX.Unility\FuX.Unility.csproj" />
+  </ItemGroup>
+
+
+</Project>

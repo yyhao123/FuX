@@ -1,0 +1,8 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Demo.Windows.Controls.filterDataGrid">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/Demo.Windows.Controls;component/filterDataGrid/themes/FilterDataGrid.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

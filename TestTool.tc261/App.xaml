@@ -1,0 +1,23 @@
+﻿<Application
+    x:Class="TestTool.tc261.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:TestTool.tc261"
+    xmlns:ui="http://materialdesigninxaml.net/winfx/xaml/themes"
+    Exit="OnExit"
+    Startup="OnStartup">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/Demo.Windows.Core;component/themes/DarkTheme.xaml" />
+                
+                <!--<ResourceDictionary Source="pack://application:,,,/Fluent;component/Themes/Generic.xaml" />-->
+                <!--<ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Fluent;component/Themes/Generic.xaml" />-->
+                <!--  filterDataGrid控件相关  -->
+                <!--<ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.ObsoleteBrushes.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Demo.Windows.Controls;component/filterDataGrid/themes/Generic.xaml" />-->
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

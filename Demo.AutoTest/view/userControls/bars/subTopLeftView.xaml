@@ -1,0 +1,86 @@
+﻿<UserControl
+    x:Class="Demo.AutoTest.view.userControls.bars.subTopLeftView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:lang="https://FuX.top/language"
+    xmlns:local="clr-namespace:Demo.AutoTest.view.userControls.bars"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ui="http://materialdesigninxaml.net/winfx/xaml/themes"
+    d:DesignHeight="300"
+    d:DesignWidth="300"
+    lang:ResxLocalizationProvider.DefaultAssembly="Demo.AutoTest.Language"
+    lang:ResxLocalizationProvider.DefaultDictionary="Language"
+    mc:Ignorable="d">
+    <Grid>
+        <!--  伪彩色界面  -->
+        <GroupBox
+            Margin="5,0,5,5"
+            ui:ElevationAssist.Elevation="Dp2"
+            ui:GroupBoxAssist.HeaderPadding="7"
+            Style="{StaticResource MaterialDesignCardGroupBox}">
+            <GroupBox.HeaderTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <ui:PackIcon Grid.Column="0" Kind="Finance" />
+                        <TextBlock
+                            Grid.Column="1"
+                            Margin="5,0,0,0"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Text="{lang:Loc 图表}"
+                            TextAlignment="Center" />
+                        <Button
+                            Grid.Column="2"
+                            Width="16"
+                            Height="16"
+                            Margin="0"
+                            Padding="0"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Center"
+                            HorizontalContentAlignment="Center"
+                            VerticalContentAlignment="Center"
+                            CommandParameter="{x:Static Dock.Right}">
+                            <Button.Style>
+                                <Style BasedOn="{StaticResource MaterialDesignIconForegroundButton}" TargetType="Button">
+                                    <Setter Property="Command" Value="{x:Static ui:DrawerHost.OpenDrawerCommand}" />
+                                    <Setter Property="Content" Value="{ui:PackIcon Kind=MenuOpen, Size=16}" />
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding RelativeSource={RelativeSource AncestorType=ui:DrawerHost}, Path=(ui:DrawerHost.IsRightDrawerOpen)}" Value="True">
+                                            <Setter Property="Command" Value="{x:Static ui:DrawerHost.CloseDrawerCommand}" />
+                                            <Setter Property="Content" Value="{ui:PackIcon Kind=MenuClose, Size=16}" />
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+                        </Button>
+                    </Grid>
+                </DataTemplate>
+            </GroupBox.HeaderTemplate>
+            <ui:DialogHost
+                Grid.Row="1"
+                Width="Auto"
+                Height="Auto"
+                CacheMode="BitmapCache"
+                CloseOnClickAway="True"
+                DialogContentUniformCornerRadius="{DynamicResource WindowCornerRadius_Double}"
+                DialogTheme="Inherit"
+                Identifier="ChartLineOperate"
+                RenderOptions.BitmapScalingMode="Unspecified"
+                RenderOptions.ClearTypeHint="Enabled"
+                RenderOptions.EdgeMode="Unspecified"
+                SnapsToDevicePixels="True"
+                UseLayoutRounding="True">
+
+                <ContentControl Content="{Binding ChartControl}" />
+
+            </ui:DialogHost>
+
+        </GroupBox>
+    </Grid>
+</UserControl>

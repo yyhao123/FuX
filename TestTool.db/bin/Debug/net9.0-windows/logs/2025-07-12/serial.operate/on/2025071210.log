@@ -1,0 +1,12 @@
+2025-07-12 10:58:50.277 | ERR | [ SerialOperate ]( On 异常 < 在 SerialOperate.cs 文件，第 88 行 > ) : Could not find file 'COM3'.
+System.IO.FileNotFoundException: Could not find file 'COM3'.
+File name: 'COM3'
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at Fnet.Core.Communication.serial.SerialOperate.On() in D:\project\FNet\Fnet.Unility\Fnet.Core\Communication\serial\SerialOperate.cs:line 86
+2025-07-12 10:59:32.561 | ERR | [ SerialOperate ]( On 异常 < 在 SerialOperate.cs 文件，第 88 行 > ) : Could not find file 'COM3'.
+System.IO.FileNotFoundException: Could not find file 'COM3'.
+File name: 'COM3'
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at Fnet.Core.Communication.serial.SerialOperate.On() in D:\project\FNet\Fnet.Unility\Fnet.Core\Communication\serial\SerialOperate.cs:line 86

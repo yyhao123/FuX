@@ -1,0 +1,632 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Project2\\FuX\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3EDCFD25-8955-4A57-AB73-3795959950B9}|Demo.Windows.Controls\\Demo.Windows.Controls.csproj|e:\\project2\\fux\\demo.windows.controls\\textbox\\textboxcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3EDCFD25-8955-4A57-AB73-3795959950B9}|Demo.Windows.Controls\\Demo.Windows.Controls.csproj|solutionrelative:demo.windows.controls\\textbox\\textboxcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{218DFB90-C9AE-4051-94F5-84D5368F0C44}|Demo.Driver\\Demo.Driver.csproj|e:\\project2\\fux\\demo.driver\\ccd\\tc261\\tc261data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{218DFB90-C9AE-4051-94F5-84D5368F0C44}|Demo.Driver\\Demo.Driver.csproj|solutionrelative:demo.driver\\ccd\\tc261\\tc261data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{250C7404-B9C7-40AB-9260-0169F9700A5C}|Demo.Unility\\Demo.Unility.csproj|e:\\project2\\fux\\demo.unility\\bithandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{250C7404-B9C7-40AB-9260-0169F9700A5C}|Demo.Unility\\Demo.Unility.csproj|solutionrelative:demo.unility\\bithandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{250C7404-B9C7-40AB-9260-0169F9700A5C}|Demo.Unility\\Demo.Unility.csproj|e:\\project2\\fux\\demo.unility\\bytehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{250C7404-B9C7-40AB-9260-0169F9700A5C}|Demo.Unility\\Demo.Unility.csproj|solutionrelative:demo.unility\\bytehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04EF85FA-6139-E0D0-6418-AF252165B018}|FuX.Core\\FuX.Core.csproj|e:\\project2\\fux\\fux.core\\fux.core.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{04EF85FA-6139-E0D0-6418-AF252165B018}|FuX.Core\\FuX.Core.csproj|solutionrelative:fux.core\\fux.core.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04EF85FA-6139-E0D0-6418-AF252165B018}|FuX.Core\\FuX.Core.csproj|e:\\project2\\fux\\fux.core\\fux.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{04EF85FA-6139-E0D0-6418-AF252165B018}|FuX.Core\\FuX.Core.csproj|solutionrelative:fux.core\\fux.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5302FBEB-6E0D-EB52-16D4-A77C922F220E}|FuX.Model\\FuX.Model.csproj|e:\\project2\\fux\\fux.model\\fux.model.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{5302FBEB-6E0D-EB52-16D4-A77C922F220E}|FuX.Model\\FuX.Model.csproj|solutionrelative:fux.model\\fux.model.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FB9331A-8773-3DCD-B81A-35916824DC5F}|FuX.Unility\\FuX.Unility.csproj|e:\\project2\\fux\\fux.unility\\fux.unility.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{6FB9331A-8773-3DCD-B81A-35916824DC5F}|FuX.Unility\\FuX.Unility.csproj|solutionrelative:fux.unility\\fux.unility.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FB9331A-8773-3DCD-B81A-35916824DC5F}|FuX.Unility\\FuX.Unility.csproj|e:\\project2\\fux\\fux.unility\\fux.unility.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6FB9331A-8773-3DCD-B81A-35916824DC5F}|FuX.Unility\\FuX.Unility.csproj|solutionrelative:fux.unility\\fux.unility.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5302FBEB-6E0D-EB52-16D4-A77C922F220E}|FuX.Model\\FuX.Model.csproj|e:\\project2\\fux\\fux.model\\fux.model.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5302FBEB-6E0D-EB52-16D4-A77C922F220E}|FuX.Model\\FuX.Model.csproj|solutionrelative:fux.model\\fux.model.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A71049B3-CA37-BF40-3CEE-DDE43BF8361D}|FuX.Log\\FuX.Log.csproj|e:\\project2\\fux\\fux.log\\fux.log.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{A71049B3-CA37-BF40-3CEE-DDE43BF8361D}|FuX.Log\\FuX.Log.csproj|solutionrelative:fux.log\\fux.log.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A71049B3-CA37-BF40-3CEE-DDE43BF8361D}|FuX.Log\\FuX.Log.csproj|e:\\project2\\fux\\fux.log\\fux.log.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A71049B3-CA37-BF40-3CEE-DDE43BF8361D}|FuX.Log\\FuX.Log.csproj|solutionrelative:fux.log\\fux.log.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E79944-F69C-4533-8CEB-F1CDA67CAA33}|Demo.AutoTest\\Demo.AutoTest.csproj|e:\\project2\\fux\\demo.autotest\\viewmodel\\usercontrols\\bars\\leftbottomviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8E79944-F69C-4533-8CEB-F1CDA67CAA33}|Demo.AutoTest\\Demo.AutoTest.csproj|solutionrelative:demo.autotest\\viewmodel\\usercontrols\\bars\\leftbottomviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E79944-F69C-4533-8CEB-F1CDA67CAA33}|Demo.AutoTest\\Demo.AutoTest.csproj|e:\\project2\\fux\\demo.autotest\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{D8E79944-F69C-4533-8CEB-F1CDA67CAA33}|Demo.AutoTest\\Demo.AutoTest.csproj|solutionrelative:demo.autotest\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E79944-F69C-4533-8CEB-F1CDA67CAA33}|Demo.AutoTest\\Demo.AutoTest.csproj|e:\\project2\\fux\\demo.autotest\\viewmodel\\usercontrols\\acquiremoduleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8E79944-F69C-4533-8CEB-F1CDA67CAA33}|Demo.AutoTest\\Demo.AutoTest.csproj|solutionrelative:demo.autotest\\viewmodel\\usercontrols\\acquiremoduleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EDCFD25-8955-4A57-AB73-3795959950B9}|Demo.Windows.Controls\\Demo.Windows.Controls.csproj|e:\\project2\\fux\\demo.windows.controls\\chart\\chartoperate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EDCFD25-8955-4A57-AB73-3795959950B9}|Demo.Windows.Controls\\Demo.Windows.Controls.csproj|solutionrelative:demo.windows.controls\\chart\\chartoperate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EDCFD25-8955-4A57-AB73-3795959950B9}|Demo.Windows.Controls\\Demo.Windows.Controls.csproj|e:\\project2\\fux\\demo.windows.controls\\chart\\chartdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EDCFD25-8955-4A57-AB73-3795959950B9}|Demo.Windows.Controls\\Demo.Windows.Controls.csproj|solutionrelative:demo.windows.controls\\chart\\chartdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E79944-F69C-4533-8CEB-F1CDA67CAA33}|Demo.AutoTest\\Demo.AutoTest.csproj|e:\\project2\\fux\\demo.autotest\\viewmodel\\windows\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8E79944-F69C-4533-8CEB-F1CDA67CAA33}|Demo.AutoTest\\Demo.AutoTest.csproj|solutionrelative:demo.autotest\\viewmodel\\windows\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E79944-F69C-4533-8CEB-F1CDA67CAA33}|Demo.AutoTest\\Demo.AutoTest.csproj|e:\\project2\\fux\\demo.autotest\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8E79944-F69C-4533-8CEB-F1CDA67CAA33}|Demo.AutoTest\\Demo.AutoTest.csproj|solutionrelative:demo.autotest\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E79944-F69C-4533-8CEB-F1CDA67CAA33}|Demo.AutoTest\\Demo.AutoTest.csproj|e:\\project2\\fux\\demo.autotest\\viewmodel\\usercontrols\\bars\\topleftviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8E79944-F69C-4533-8CEB-F1CDA67CAA33}|Demo.AutoTest\\Demo.AutoTest.csproj|solutionrelative:demo.autotest\\viewmodel\\usercontrols\\bars\\topleftviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4091707C-E6D1-40B6-A3CF-07B05A6F63B2}|Demo.Windows.Core\\Demo.Windows.Core.csproj|e:\\project2\\fux\\demo.windows.core\\handler\\injectionwpf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4091707C-E6D1-40B6-A3CF-07B05A6F63B2}|Demo.Windows.Core\\Demo.Windows.Core.csproj|solutionrelative:demo.windows.core\\handler\\injectionwpf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E79944-F69C-4533-8CEB-F1CDA67CAA33}|Demo.AutoTest\\Demo.AutoTest.csproj|e:\\project2\\fux\\demo.autotest\\viewmodel\\usercontrols\\middlegraphareaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8E79944-F69C-4533-8CEB-F1CDA67CAA33}|Demo.AutoTest\\Demo.AutoTest.csproj|solutionrelative:demo.autotest\\viewmodel\\usercontrols\\middlegraphareaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FB9331A-8773-3DCD-B81A-35916824DC5F}|FuX.Unility\\FuX.Unility.csproj|e:\\project2\\fux\\fux.unility\\injectionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FB9331A-8773-3DCD-B81A-35916824DC5F}|FuX.Unility\\FuX.Unility.csproj|solutionrelative:fux.unility\\injectionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EDCFD25-8955-4A57-AB73-3795959950B9}|Demo.Windows.Controls\\Demo.Windows.Controls.csproj|e:\\project2\\fux\\demo.windows.controls\\pages\\configmanagerview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3EDCFD25-8955-4A57-AB73-3795959950B9}|Demo.Windows.Controls\\Demo.Windows.Controls.csproj|solutionrelative:demo.windows.controls\\pages\\configmanagerview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E79944-F69C-4533-8CEB-F1CDA67CAA33}|Demo.AutoTest\\Demo.AutoTest.csproj|e:\\project2\\fux\\demo.autotest\\view\\windows\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D8E79944-F69C-4533-8CEB-F1CDA67CAA33}|Demo.AutoTest\\Demo.AutoTest.csproj|solutionrelative:demo.autotest\\view\\windows\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E79944-F69C-4533-8CEB-F1CDA67CAA33}|Demo.AutoTest\\Demo.AutoTest.csproj|e:\\project2\\fux\\demo.autotest\\viewmodel\\module\\acquiremoduleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8E79944-F69C-4533-8CEB-F1CDA67CAA33}|Demo.AutoTest\\Demo.AutoTest.csproj|solutionrelative:demo.autotest\\viewmodel\\module\\acquiremoduleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E79944-F69C-4533-8CEB-F1CDA67CAA33}|Demo.AutoTest\\Demo.AutoTest.csproj|e:\\project2\\fux\\demo.autotest\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D8E79944-F69C-4533-8CEB-F1CDA67CAA33}|Demo.AutoTest\\Demo.AutoTest.csproj|solutionrelative:demo.autotest\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{218DFB90-C9AE-4051-94F5-84D5368F0C44}|Demo.Driver\\Demo.Driver.csproj|e:\\project2\\fux\\demo.driver\\service\\ideviceservicecom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{218DFB90-C9AE-4051-94F5-84D5368F0C44}|Demo.Driver\\Demo.Driver.csproj|solutionrelative:demo.driver\\service\\ideviceservicecom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E79944-F69C-4533-8CEB-F1CDA67CAA33}|Demo.AutoTest\\Demo.AutoTest.csproj|e:\\project2\\fux\\demo.autotest\\viewmodel\\usercontrols\\rightpramviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8E79944-F69C-4533-8CEB-F1CDA67CAA33}|Demo.AutoTest\\Demo.AutoTest.csproj|solutionrelative:demo.autotest\\viewmodel\\usercontrols\\rightpramviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{218DFB90-C9AE-4051-94F5-84D5368F0C44}|Demo.Driver\\Demo.Driver.csproj|e:\\project2\\fux\\demo.driver\\serial\\serialmanageroperate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{218DFB90-C9AE-4051-94F5-84D5368F0C44}|Demo.Driver\\Demo.Driver.csproj|solutionrelative:demo.driver\\serial\\serialmanageroperate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{218DFB90-C9AE-4051-94F5-84D5368F0C44}|Demo.Driver\\Demo.Driver.csproj|e:\\project2\\fux\\demo.driver\\service\\ideviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{218DFB90-C9AE-4051-94F5-84D5368F0C44}|Demo.Driver\\Demo.Driver.csproj|solutionrelative:demo.driver\\service\\ideviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EDCFD25-8955-4A57-AB73-3795959950B9}|Demo.Windows.Controls\\Demo.Windows.Controls.csproj|e:\\project2\\fux\\demo.windows.controls\\chart\\charthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EDCFD25-8955-4A57-AB73-3795959950B9}|Demo.Windows.Controls\\Demo.Windows.Controls.csproj|solutionrelative:demo.windows.controls\\chart\\charthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E79944-F69C-4533-8CEB-F1CDA67CAA33}|Demo.AutoTest\\Demo.AutoTest.csproj|e:\\project2\\fux\\demo.autotest\\view\\usercontrols\\rightpram.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D8E79944-F69C-4533-8CEB-F1CDA67CAA33}|Demo.AutoTest\\Demo.AutoTest.csproj|solutionrelative:demo.autotest\\view\\usercontrols\\rightpram.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EDCFD25-8955-4A57-AB73-3795959950B9}|Demo.Windows.Controls\\Demo.Windows.Controls.csproj|e:\\project2\\fux\\demo.windows.controls\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EDCFD25-8955-4A57-AB73-3795959950B9}|Demo.Windows.Controls\\Demo.Windows.Controls.csproj|solutionrelative:demo.windows.controls\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E79944-F69C-4533-8CEB-F1CDA67CAA33}|Demo.AutoTest\\Demo.AutoTest.csproj|e:\\project2\\fux\\demo.autotest\\view\\usercontrols\\acquiremodule.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D8E79944-F69C-4533-8CEB-F1CDA67CAA33}|Demo.AutoTest\\Demo.AutoTest.csproj|solutionrelative:demo.autotest\\view\\usercontrols\\acquiremodule.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{929F8A8F-8E1C-42FE-A2C3-E2373470188E}|Demo.Model\\Demo.Model.csproj|e:\\project2\\fux\\demo.model\\data\\device.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{929F8A8F-8E1C-42FE-A2C3-E2373470188E}|Demo.Model\\Demo.Model.csproj|solutionrelative:demo.model\\data\\device.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EDCFD25-8955-4A57-AB73-3795959950B9}|Demo.Windows.Controls\\Demo.Windows.Controls.csproj|e:\\project2\\fux\\demo.windows.controls\\property\\propertycontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3EDCFD25-8955-4A57-AB73-3795959950B9}|Demo.Windows.Controls\\Demo.Windows.Controls.csproj|solutionrelative:demo.windows.controls\\property\\propertycontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Project2\\FuX\\Fnet.Core\\subscription\\SubscribeOperate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Fnet.Core\\subscription\\SubscribeOperate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EDCFD25-8955-4A57-AB73-3795959950B9}|Demo.Windows.Controls\\Demo.Windows.Controls.csproj|e:\\project2\\fux\\demo.windows.controls\\filterdatagrid\\themes\\filterdatagrid.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3EDCFD25-8955-4A57-AB73-3795959950B9}|Demo.Windows.Controls\\Demo.Windows.Controls.csproj|solutionrelative:demo.windows.controls\\filterdatagrid\\themes\\filterdatagrid.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TextBoxControl.xaml",
+              "DocumentMoniker": "E:\\Project2\\FuX\\Demo.Windows.Controls\\textBox\\TextBoxControl.xaml",
+              "RelativeDocumentMoniker": "Demo.Windows.Controls\\textBox\\TextBoxControl.xaml",
+              "ToolTip": "E:\\Project2\\FuX\\Demo.Windows.Controls\\textBox\\TextBoxControl.xaml",
+              "RelativeToolTip": "Demo.Windows.Controls\\textBox\\TextBoxControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-19T01:19:28.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BitHandler.cs",
+              "DocumentMoniker": "E:\\Project2\\FuX\\Demo.Unility\\BitHandler.cs",
+              "RelativeDocumentMoniker": "Demo.Unility\\BitHandler.cs",
+              "ToolTip": "E:\\Project2\\FuX\\Demo.Unility\\BitHandler.cs",
+              "RelativeToolTip": "Demo.Unility\\BitHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T09:50:12.161Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ByteHandler.cs",
+              "DocumentMoniker": "E:\\Project2\\FuX\\Demo.Unility\\ByteHandler.cs",
+              "RelativeDocumentMoniker": "Demo.Unility\\ByteHandler.cs",
+              "ToolTip": "E:\\Project2\\FuX\\Demo.Unility\\ByteHandler.cs",
+              "RelativeToolTip": "Demo.Unility\\ByteHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T09:51:11.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TC261Data.cs",
+              "DocumentMoniker": "E:\\Project2\\FuX\\Demo.Driver\\ccd\\tc261\\TC261Data.cs",
+              "RelativeDocumentMoniker": "Demo.Driver\\ccd\\tc261\\TC261Data.cs",
+              "ToolTip": "E:\\Project2\\FuX\\Demo.Driver\\ccd\\tc261\\TC261Data.cs",
+              "RelativeToolTip": "Demo.Driver\\ccd\\tc261\\TC261Data.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T09:50:01.925Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FuX.Unility.csproj",
+              "DocumentMoniker": "E:\\Project2\\FuX\\FuX.Unility\\FuX.Unility.csproj",
+              "RelativeDocumentMoniker": "FuX.Unility\\FuX.Unility.csproj",
+              "ToolTip": "E:\\Project2\\FuX\\FuX.Unility\\FuX.Unility.csproj",
+              "RelativeToolTip": "FuX.Unility\\FuX.Unility.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-18T09:22:06.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FuX.Unility",
+              "DocumentMoniker": "E:\\Project2\\FuX\\FuX.Unility\\FuX.Unility.csproj",
+              "RelativeDocumentMoniker": "FuX.Unility\\FuX.Unility.csproj",
+              "ToolTip": "E:\\Project2\\FuX\\FuX.Unility\\FuX.Unility.csproj",
+              "RelativeToolTip": "FuX.Unility\\FuX.Unility.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-18T09:22:12.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FuX.Model.csproj",
+              "DocumentMoniker": "E:\\Project2\\FuX\\FuX.Model\\FuX.Model.csproj",
+              "RelativeDocumentMoniker": "FuX.Model\\FuX.Model.csproj",
+              "ToolTip": "E:\\Project2\\FuX\\FuX.Model\\FuX.Model.csproj",
+              "RelativeToolTip": "FuX.Model\\FuX.Model.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-18T09:21:05.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FuX.Model",
+              "DocumentMoniker": "E:\\Project2\\FuX\\FuX.Model\\FuX.Model.csproj",
+              "RelativeDocumentMoniker": "FuX.Model\\FuX.Model.csproj",
+              "ToolTip": "E:\\Project2\\FuX\\FuX.Model\\FuX.Model.csproj",
+              "RelativeToolTip": "FuX.Model\\FuX.Model.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-18T09:21:24.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FuX.Log.csproj",
+              "DocumentMoniker": "E:\\Project2\\FuX\\FuX.Log\\FuX.Log.csproj",
+              "RelativeDocumentMoniker": "FuX.Log\\FuX.Log.csproj",
+              "ToolTip": "E:\\Project2\\FuX\\FuX.Log\\FuX.Log.csproj",
+              "RelativeToolTip": "FuX.Log\\FuX.Log.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-18T09:20:19.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FuX.Log",
+              "DocumentMoniker": "E:\\Project2\\FuX\\FuX.Log\\FuX.Log.csproj",
+              "RelativeDocumentMoniker": "FuX.Log\\FuX.Log.csproj",
+              "ToolTip": "E:\\Project2\\FuX\\FuX.Log\\FuX.Log.csproj",
+              "RelativeToolTip": "FuX.Log\\FuX.Log.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-18T09:20:26.374Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FuX.Core",
+              "DocumentMoniker": "E:\\Project2\\FuX\\FuX.Core\\FuX.Core.csproj",
+              "RelativeDocumentMoniker": "FuX.Core\\FuX.Core.csproj",
+              "ToolTip": "E:\\Project2\\FuX\\FuX.Core\\FuX.Core.csproj",
+              "RelativeToolTip": "FuX.Core\\FuX.Core.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-18T08:40:20.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LeftBottomViewModel.cs",
+              "DocumentMoniker": "E:\\Project2\\FuX\\Demo.AutoTest\\viewModel\\userControls\\bars\\LeftBottomViewModel.cs",
+              "RelativeDocumentMoniker": "Demo.AutoTest\\viewModel\\userControls\\bars\\LeftBottomViewModel.cs",
+              "ToolTip": "E:\\Project2\\FuX\\Demo.AutoTest\\viewModel\\userControls\\bars\\LeftBottomViewModel.cs",
+              "RelativeToolTip": "Demo.AutoTest\\viewModel\\userControls\\bars\\LeftBottomViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T03:51:46.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ReadMe.md",
+              "DocumentMoniker": "E:\\Project2\\FuX\\Demo.AutoTest\\ReadMe.md",
+              "RelativeDocumentMoniker": "Demo.AutoTest\\ReadMe.md",
+              "ToolTip": "E:\\Project2\\FuX\\Demo.AutoTest\\ReadMe.md",
+              "RelativeToolTip": "Demo.AutoTest\\ReadMe.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-18T03:51:40.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "InjectionHandler.cs",
+              "DocumentMoniker": "E:\\Project2\\FuX\\FuX.Unility\\InjectionHandler.cs",
+              "RelativeDocumentMoniker": "FuX.Unility\\InjectionHandler.cs",
+              "ToolTip": "E:\\Project2\\FuX\\FuX.Unility\\InjectionHandler.cs",
+              "RelativeToolTip": "FuX.Unility\\InjectionHandler.cs",
+              "ViewState": "AgIAAOUAAAAAAAAAAAAAwAkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T08:38:50.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AcquireModuleViewModel.cs",
+              "DocumentMoniker": "E:\\Project2\\FuX\\Demo.AutoTest\\viewModel\\userControls\\AcquireModuleViewModel.cs",
+              "RelativeDocumentMoniker": "Demo.AutoTest\\viewModel\\userControls\\AcquireModuleViewModel.cs",
+              "ToolTip": "E:\\Project2\\FuX\\Demo.AutoTest\\viewModel\\userControls\\AcquireModuleViewModel.cs",
+              "RelativeToolTip": "Demo.AutoTest\\viewModel\\userControls\\AcquireModuleViewModel.cs",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAAwLAAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T08:07:49.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "App.xaml",
+              "DocumentMoniker": "E:\\Project2\\FuX\\Demo.AutoTest\\App.xaml",
+              "RelativeDocumentMoniker": "Demo.AutoTest\\App.xaml",
+              "ToolTip": "E:\\Project2\\FuX\\Demo.AutoTest\\App.xaml",
+              "RelativeToolTip": "Demo.AutoTest\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-14T08:00:24.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "MainView.xaml",
+              "DocumentMoniker": "E:\\Project2\\FuX\\Demo.AutoTest\\view\\windows\\MainView.xaml",
+              "RelativeDocumentMoniker": "Demo.AutoTest\\view\\windows\\MainView.xaml",
+              "ToolTip": "E:\\Project2\\FuX\\Demo.AutoTest\\view\\windows\\MainView.xaml",
+              "RelativeToolTip": "Demo.AutoTest\\view\\windows\\MainView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-14T07:37:46.389Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "E:\\Project2\\FuX\\Demo.AutoTest\\viewModel\\windows\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "Demo.AutoTest\\viewModel\\windows\\MainViewModel.cs",
+              "ToolTip": "E:\\Project2\\FuX\\Demo.AutoTest\\viewModel\\windows\\MainViewModel.cs",
+              "RelativeToolTip": "Demo.AutoTest\\viewModel\\windows\\MainViewModel.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAkwDAAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T07:22:08.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "InjectionWpf.cs",
+              "DocumentMoniker": "E:\\Project2\\FuX\\Demo.Windows.Core\\handler\\InjectionWpf.cs",
+              "RelativeDocumentMoniker": "Demo.Windows.Core\\handler\\InjectionWpf.cs",
+              "ToolTip": "E:\\Project2\\FuX\\Demo.Windows.Core\\handler\\InjectionWpf.cs",
+              "RelativeToolTip": "Demo.Windows.Core\\handler\\InjectionWpf.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAuwHsAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T05:50:36.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "TopLeftViewModel.cs",
+              "DocumentMoniker": "E:\\Project2\\FuX\\Demo.AutoTest\\viewModel\\userControls\\bars\\TopLeftViewModel.cs",
+              "RelativeDocumentMoniker": "Demo.AutoTest\\viewModel\\userControls\\bars\\TopLeftViewModel.cs",
+              "ToolTip": "E:\\Project2\\FuX\\Demo.AutoTest\\viewModel\\userControls\\bars\\TopLeftViewModel.cs",
+              "RelativeToolTip": "Demo.AutoTest\\viewModel\\userControls\\bars\\TopLeftViewModel.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAADwvw4AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T03:17:35.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "E:\\Project2\\FuX\\Demo.AutoTest\\App.xaml.cs",
+              "RelativeDocumentMoniker": "Demo.AutoTest\\App.xaml.cs",
+              "ToolTip": "E:\\Project2\\FuX\\Demo.AutoTest\\App.xaml.cs",
+              "RelativeToolTip": "Demo.AutoTest\\App.xaml.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAowFIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T02:51:44.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "MiddleGraphAreaViewModel.cs",
+              "DocumentMoniker": "E:\\Project2\\FuX\\Demo.AutoTest\\viewModel\\userControls\\MiddleGraphAreaViewModel.cs",
+              "RelativeDocumentMoniker": "Demo.AutoTest\\viewModel\\userControls\\MiddleGraphAreaViewModel.cs",
+              "ToolTip": "E:\\Project2\\FuX\\Demo.AutoTest\\viewModel\\userControls\\MiddleGraphAreaViewModel.cs",
+              "RelativeToolTip": "Demo.AutoTest\\viewModel\\userControls\\MiddleGraphAreaViewModel.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAmwD0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T02:51:30.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "FilterDataGrid.xaml",
+              "DocumentMoniker": "E:\\Project2\\FuX\\Demo.Windows.Controls\\filterDataGrid\\themes\\FilterDataGrid.xaml",
+              "RelativeDocumentMoniker": "Demo.Windows.Controls\\filterDataGrid\\themes\\FilterDataGrid.xaml",
+              "ToolTip": "E:\\Project2\\FuX\\Demo.Windows.Controls\\filterDataGrid\\themes\\FilterDataGrid.xaml",
+              "RelativeToolTip": "Demo.Windows.Controls\\filterDataGrid\\themes\\FilterDataGrid.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-14T02:42:07.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ChartData.cs",
+              "DocumentMoniker": "E:\\Project2\\FuX\\Demo.Windows.Controls\\chart\\ChartData.cs",
+              "RelativeDocumentMoniker": "Demo.Windows.Controls\\chart\\ChartData.cs",
+              "ToolTip": "E:\\Project2\\FuX\\Demo.Windows.Controls\\chart\\ChartData.cs",
+              "RelativeToolTip": "Demo.Windows.Controls\\chart\\ChartData.cs",
+              "ViewState": "AgIAAO8AAAAAAAAAAAAuwM0AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T02:15:53.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ChartOperate.cs",
+              "DocumentMoniker": "E:\\Project2\\FuX\\Demo.Windows.Controls\\chart\\ChartOperate.cs",
+              "RelativeDocumentMoniker": "Demo.Windows.Controls\\chart\\ChartOperate.cs",
+              "ToolTip": "E:\\Project2\\FuX\\Demo.Windows.Controls\\chart\\ChartOperate.cs",
+              "RelativeToolTip": "Demo.Windows.Controls\\chart\\ChartOperate.cs",
+              "ViewState": "AgIAAE4BAAAAAAAAAAAowEwBAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T01:14:18.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ChartHandler.cs",
+              "DocumentMoniker": "E:\\Project2\\FuX\\Demo.Windows.Controls\\chart\\ChartHandler.cs",
+              "RelativeDocumentMoniker": "Demo.Windows.Controls\\chart\\ChartHandler.cs",
+              "ToolTip": "E:\\Project2\\FuX\\Demo.Windows.Controls\\chart\\ChartHandler.cs",
+              "RelativeToolTip": "Demo.Windows.Controls\\chart\\ChartHandler.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAYwG8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T01:14:18.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ConfigManagerView.xaml",
+              "DocumentMoniker": "E:\\Project2\\FuX\\Demo.Windows.Controls\\pages\\ConfigManagerView.xaml",
+              "RelativeDocumentMoniker": "Demo.Windows.Controls\\pages\\ConfigManagerView.xaml",
+              "ToolTip": "E:\\Project2\\FuX\\Demo.Windows.Controls\\pages\\ConfigManagerView.xaml",
+              "RelativeToolTip": "Demo.Windows.Controls\\pages\\ConfigManagerView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-13T09:55:19.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "RightPram.xaml",
+              "DocumentMoniker": "E:\\Project2\\FuX\\Demo.AutoTest\\view\\userControls\\RightPram.xaml",
+              "RelativeDocumentMoniker": "Demo.AutoTest\\view\\userControls\\RightPram.xaml",
+              "ToolTip": "E:\\Project2\\FuX\\Demo.AutoTest\\view\\userControls\\RightPram.xaml",
+              "RelativeToolTip": "Demo.AutoTest\\view\\userControls\\RightPram.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-13T09:54:07.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Device.cs",
+              "DocumentMoniker": "E:\\Project2\\FuX\\Demo.Model\\data\\Device.cs",
+              "RelativeDocumentMoniker": "Demo.Model\\data\\Device.cs",
+              "ToolTip": "E:\\Project2\\FuX\\Demo.Model\\data\\Device.cs",
+              "RelativeToolTip": "Demo.Model\\data\\Device.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAswEIAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T08:49:16.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "AcquireModule.xaml",
+              "DocumentMoniker": "E:\\Project2\\FuX\\Demo.AutoTest\\view\\userControls\\AcquireModule.xaml",
+              "RelativeDocumentMoniker": "Demo.AutoTest\\view\\userControls\\AcquireModule.xaml",
+              "ToolTip": "E:\\Project2\\FuX\\Demo.AutoTest\\view\\userControls\\AcquireModule.xaml",
+              "RelativeToolTip": "Demo.AutoTest\\view\\userControls\\AcquireModule.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-12T08:19:35.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FuX.Core.csproj",
+              "DocumentMoniker": "E:\\Project2\\FuX\\FuX.Core\\FuX.Core.csproj",
+              "RelativeDocumentMoniker": "FuX.Core\\FuX.Core.csproj",
+              "ToolTip": "E:\\Project2\\FuX\\FuX.Core\\FuX.Core.csproj",
+              "RelativeToolTip": "FuX.Core\\FuX.Core.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-10T03:23:55.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "SubscribeOperate.cs",
+              "DocumentMoniker": "E:\\Project2\\FuX\\Fnet.Core\\subscription\\SubscribeOperate.cs",
+              "RelativeDocumentMoniker": "Fnet.Core\\subscription\\SubscribeOperate.cs",
+              "ToolTip": "E:\\Project2\\FuX\\Fnet.Core\\subscription\\SubscribeOperate.cs",
+              "RelativeToolTip": "Fnet.Core\\subscription\\SubscribeOperate.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T01:16:06.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "E:\\Project2\\FuX\\Demo.Windows.Controls\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "Demo.Windows.Controls\\AssemblyInfo.cs",
+              "ToolTip": "E:\\Project2\\FuX\\Demo.Windows.Controls\\AssemblyInfo.cs",
+              "RelativeToolTip": "Demo.Windows.Controls\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T01:13:23.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "PropertyControl.xaml",
+              "DocumentMoniker": "E:\\Project2\\FuX\\Demo.Windows.Controls\\property\\PropertyControl.xaml",
+              "RelativeDocumentMoniker": "Demo.Windows.Controls\\property\\PropertyControl.xaml",
+              "ToolTip": "E:\\Project2\\FuX\\Demo.Windows.Controls\\property\\PropertyControl.xaml",
+              "RelativeToolTip": "Demo.Windows.Controls\\property\\PropertyControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-10T01:11:48.482Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AcquireModuleViewModel.cs",
+              "DocumentMoniker": "E:\\Project2\\FuX\\Demo.AutoTest\\viewModel\\Module\\AcquireModuleViewModel.cs",
+              "RelativeDocumentMoniker": "Demo.AutoTest\\viewModel\\Module\\AcquireModuleViewModel.cs",
+              "ToolTip": "E:\\Project2\\FuX\\Demo.AutoTest\\viewModel\\Module\\AcquireModuleViewModel.cs",
+              "RelativeToolTip": "Demo.AutoTest\\viewModel\\Module\\AcquireModuleViewModel.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAA8wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T05:34:11.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "RightPramViewModel.cs",
+              "DocumentMoniker": "E:\\Project2\\FuX\\Demo.AutoTest\\viewModel\\userControls\\RightPramViewModel.cs",
+              "RelativeDocumentMoniker": "Demo.AutoTest\\viewModel\\userControls\\RightPramViewModel.cs",
+              "ToolTip": "E:\\Project2\\FuX\\Demo.AutoTest\\viewModel\\userControls\\RightPramViewModel.cs",
+              "RelativeToolTip": "Demo.AutoTest\\viewModel\\userControls\\RightPramViewModel.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAawG0AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T02:14:24.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "IDeviceService.cs",
+              "DocumentMoniker": "E:\\Project2\\FuX\\Demo.Driver\\service\\IDeviceService.cs",
+              "RelativeDocumentMoniker": "Demo.Driver\\service\\IDeviceService.cs",
+              "ToolTip": "E:\\Project2\\FuX\\Demo.Driver\\service\\IDeviceService.cs",
+              "RelativeToolTip": "Demo.Driver\\service\\IDeviceService.cs",
+              "ViewState": "AgIAAGECAAAAAAAAAAAEwG8CAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T01:59:29.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IDeviceServiceCom.cs",
+              "DocumentMoniker": "E:\\Project2\\FuX\\Demo.Driver\\service\\IDeviceServiceCom.cs",
+              "RelativeDocumentMoniker": "Demo.Driver\\service\\IDeviceServiceCom.cs",
+              "ToolTip": "E:\\Project2\\FuX\\Demo.Driver\\service\\IDeviceServiceCom.cs",
+              "RelativeToolTip": "Demo.Driver\\service\\IDeviceServiceCom.cs",
+              "ViewState": "AgIAAHcCAAAAAAAAAAAawJMCAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T01:59:29.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "SerialManagerOperate.cs",
+              "DocumentMoniker": "E:\\Project2\\FuX\\Demo.Driver\\serial\\SerialManagerOperate.cs",
+              "RelativeDocumentMoniker": "Demo.Driver\\serial\\SerialManagerOperate.cs",
+              "ToolTip": "E:\\Project2\\FuX\\Demo.Driver\\serial\\SerialManagerOperate.cs",
+              "RelativeToolTip": "Demo.Driver\\serial\\SerialManagerOperate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T01:59:29.926Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

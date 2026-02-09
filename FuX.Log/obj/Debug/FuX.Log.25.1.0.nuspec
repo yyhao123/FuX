@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>FuX.Log</id>
+    <version>25.1.0</version>
+    <authors>FuX.Log</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="7de4a28e3367b39565daf2bba8b6d37fdaf68334" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="Serilog" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="Serilog.Sinks.Console" version="6.0.0" exclude="Build,Analyzers" />
+        <dependency id="Serilog.Sinks.File" version="7.0.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net9.0">
+        <dependency id="Serilog" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="Serilog.Sinks.Console" version="6.0.0" exclude="Build,Analyzers" />
+        <dependency id="Serilog.Sinks.File" version="7.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="E:\Project2\FuX\FuX.Log\bin\Debug\net8.0\FuX.Log.dll" target="lib\net8.0\FuX.Log.dll" />
+    <file src="E:\Project2\FuX\FuX.Log\bin\Debug\net9.0\FuX.Log.dll" target="lib\net9.0\FuX.Log.dll" />
+  </files>
+</package>

@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="你好" xml:space="preserve">
+    <value>你好</value>
+  </data>
+  <data name="提示" xml:space="preserve">
+    <value>提示</value>
+  </data>
+  <data name="Test" xml:space="preserve">
+    <value>测试</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>帮助</value>
+  </data>
+  <data name="拉曼自动测试软件" xml:space="preserve">
+    <value>UV8000超瞬态光谱仪</value>
+  </data>
+  <data name="测试项" xml:space="preserve">
+    <value>测试项</value>
+  </data>
+  <data name="搜索" xml:space="preserve">
+    <value> 搜索</value>
+  </data>
+  <data name="设备" xml:space="preserve">
+    <value>设备</value>
+  </data>
+  <data name="操作" xml:space="preserve">
+    <value>操作</value>
+  </data>
+  <data name="结果" xml:space="preserve">
+    <value>结果</value>
+  </data>
+  <data name="图表" xml:space="preserve">
+    <value>图表</value>
+  </data>
+  <data name="状态" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="采集" xml:space="preserve">
+    <value>采集</value>
+  </data>
+  <data name="光谱形状" xml:space="preserve">
+    <value>光谱形状</value>
+  </data>
+  <data name="光谱范围" xml:space="preserve">
+    <value>光谱范围</value>
+  </data>
+  <data name="暗电流" xml:space="preserve">
+    <value>暗电流</value>
+  </data>
+  <data name="暗噪声" xml:space="preserve">
+    <value>暗噪声</value>
+  </data>
+  <data name="光谱分辨率" xml:space="preserve">
+    <value>光谱分辨率</value>
+  </data>
+  <data name="位移准确度" xml:space="preserve">
+    <value>位移准确度</value>
+  </data>
+  <data name="位移重复性" xml:space="preserve">
+    <value>位移重复性</value>
+  </data>
+  <data name="位移分辨力" xml:space="preserve">
+    <value>位移分辨力</value>
+  </data>
+  <data name="强度重复性" xml:space="preserve">
+    <value>强度重复性</value>
+  </data>
+  <data name="灵敏度" xml:space="preserve">
+    <value>灵敏度</value>
+  </data>
+  <data name="信噪比" xml:space="preserve">
+    <value>信噪比</value>
+  </data>
+  <data name="二阶信噪比" xml:space="preserve">
+    <value>二阶信噪比</value>
+  </data>
+  <data name="三阶信噪比" xml:space="preserve">
+    <value>三阶信噪比</value>
+  </data>
+  <data name="长效稳定性" xml:space="preserve">
+    <value>长效稳定性</value>
+  </data>
+  <data name="TEC制冷能力" xml:space="preserve">
+    <value>TEC制冷能力</value>
+  </data>
+  <data name="TEC温度监控" xml:space="preserve">
+    <value>TEC温度监控</value>
+  </data>
+  <data name="AcquireModule" xml:space="preserve">
+    <value>采集模块</value>
+  </data>
+  <data name="指令管理" xml:space="preserve">
+    <value>指令管理</value>
+  </data>
+  <data name="设备管理" xml:space="preserve">
+    <value>设备管理</value>
+  </data>
+  <data name="配置管理" xml:space="preserve">
+    <value>配置管理</value>
+  </data>
+  <data name="语言管理" xml:space="preserve">
+    <value>语言管理</value>
+  </data>
+  <data name="定标拟合" xml:space="preserve">
+    <value>定标拟合</value>
+  </data>
+  <data name="脉冲补偿定标" xml:space="preserve">
+    <value>脉冲补偿定标</value>
+  </data>
+  <data name="定标调试" xml:space="preserve">
+    <value>定标调试</value>
+  </data>
+  <data name="链接设备" xml:space="preserve">
+    <value>链接设备</value>
+  </data>
+  <data name="重启软件" xml:space="preserve">
+    <value>重启软件</value>
+  </data>
+  <data name="光谱列表" xml:space="preserve">
+    <value>光谱列表</value>
+  </data>
+  <data name="Range" xml:space="preserve">
+    <value>范围采集</value>
+  </data>
+  <data name="Spectrum" xml:space="preserve">
+    <value>光谱</value>
+  </data>
+  <data name="反射光入光" xml:space="preserve">
+    <value>反射光入光</value>
+  </data>
+  <data name="反射光出光" xml:space="preserve">
+    <value>反射光出光</value>
+  </data>
+  <data name="M2电机" xml:space="preserve">
+    <value>M2电机</value>
+  </data>
+  <data name="可见光" xml:space="preserve">
+    <value>可见光</value>
+  </data>
+  <data name="激光" xml:space="preserve">
+    <value>激光</value>
+  </data>
+  <data name="系统配置" xml:space="preserve">
+    <value>系统配置</value>
+  </data>
+  <data name="显示区" xml:space="preserve">
+    <value>显示区test</value>
+  </data>
+  <data name="谱图名称" xml:space="preserve">
+    <value>谱图名称</value>
+  </data>
+  <data name="光栅" xml:space="preserve">
+    <value>光栅</value>
+  </data>
+  <data name="Range1" xml:space="preserve">
+    <value>范围</value>
+  </data>
+  <data name="全谱" xml:space="preserve">
+    <value>全谱</value>
+  </data>
+  <data name="范围" xml:space="preserve">
+    <value>范围</value>
+  </data>
+  <data name="采集频率" xml:space="preserve">
+    <value>采集频率:</value>
+  </data>
+  <data name="增益档位" xml:space="preserve">
+    <value>增益档位:</value>
+  </data>
+  <data name="滤波权重" xml:space="preserve">
+    <value>滤波权重:</value>
+  </data>
+  <data name="波长范围" xml:space="preserve">
+    <value>波长范围:</value>
+  </data>
+  <data name="设备未连接" xml:space="preserve">
+    <value>设备未连接</value>
+  </data>
+  <data name="探测器型号" xml:space="preserve">
+    <value>探测器型号</value>
+  </data>
+  <data name="无" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="TC261" xml:space="preserve">
+    <value>TC261</value>
+  </data>
+  <data name="ATD2100USB" xml:space="preserve">
+    <value>ATD2100USB</value>
+  </data>
+  <data name="ATD7100USB" xml:space="preserve">
+    <value>ATD7100USB</value>
+  </data>
+  <data name="ATD2100Com" xml:space="preserve">
+    <value>ATD2100Com</value>
+  </data>
+  <data name="ATD7100Com" xml:space="preserve">
+    <value>ATD7100Com</value>
+  </data>
+  <data name="TC261Area" xml:space="preserve">
+    <value>TC261Area</value>
+  </data>
+  <data name="Toup2048" xml:space="preserve">
+    <value>Toup2048</value>
+  </data>
+  <data name="Toup640" xml:space="preserve">
+    <value>Toup640</value>
+  </data>
+  <data name="EMCCD" xml:space="preserve">
+    <value>EMCCD</value>
+  </data>
+  <data name="探测器类型" xml:space="preserve">
+    <value>探测器类型</value>
+  </data>
+  <data name="点" xml:space="preserve">
+    <value>点</value>
+  </data>
+  <data name="线" xml:space="preserve">
+    <value>线</value>
+  </data>
+  <data name="面" xml:space="preserve">
+    <value>面</value>
+  </data>
+</root>
