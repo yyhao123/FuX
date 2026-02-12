@@ -19,7 +19,7 @@ namespace Demo.AutoTest.viewModel.Module
     public class RightSpectrumListViewModel:BindNotify
     {
 
-        public AcquireModuleDataInfo AcquireModuleDataInfo { get; set; } = new AcquireModuleDataInfo();
+        public AcquireModuleState AcquireModuleState { get; set; } = new AcquireModuleState();
         /// <summary>
         /// Treelist node 节点列表
         /// </summary>
@@ -46,7 +46,7 @@ namespace Demo.AutoTest.viewModel.Module
         public void  RefreshDataSource()
         {
             Node = new ObservableCollection<SpectrumNodeBrowseStructuralBody> ();
-            var d = AcquireModuleDataInfo.SpectrumTreeNodes.Select(s => new SpectrumNodeBrowseStructuralBody { Name = s.NodeText }).ToList();
+            var d = AcquireModuleState.SpectrumTreeNodes.Select(s => new SpectrumNodeBrowseStructuralBody { Name = s.NodeText }).ToList();
             Node = new ObservableCollection<SpectrumNodeBrowseStructuralBody>(d);
         }
 

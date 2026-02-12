@@ -23,13 +23,13 @@ namespace Demo.AutoTest.services
         /// <param name="model"></param>
         /// <param name="spectrum"></param>
         /// <returns></returns>
-        int AddSpectrumTreeNode(AcquireModuleDataInfo model, SpectrumDto spectrum, Color spectrumColor, SpecInfo specInfo = null);
+        int AddSpectrumTreeNode(AcquireModuleState model, SpectrumDto spectrum, Color spectrumColor, SpecInfo specInfo = null);
 
         /// <summary>
         /// Add root node, Id = 0
         /// </summary>
         /// <param name="model"></param>
-        void AddRootSpectrumTreeNode(AcquireModuleDataInfo model);
+        void AddRootSpectrumTreeNode(AcquireModuleState model);
 
         /// <summary>
         /// Remove from LineItemList (ZedGraph)
@@ -37,7 +37,7 @@ namespace Demo.AutoTest.services
         /// <param name="model"></param>
         /// <param name="spectrumId"></param>
         /// <returns></returns>
-        bool RemoveLineItemToList(AcquireModuleDataInfo model, string spectrumId);
+        bool RemoveLineItemToList(AcquireModuleState model, string spectrumId);
 
         /// <summary>
         /// Add to LineItemList (ZedGraph)
@@ -45,7 +45,7 @@ namespace Demo.AutoTest.services
         /// <param name="model"></param>
         /// <param name="spectrum"></param>
         /// <returns></returns>
-        bool AddLineItemToList(AcquireModuleDataInfo model, SpectrumDto spectrum, Color spectrumColor, SpecInfo specInfo = null);
+        bool AddLineItemToList(AcquireModuleState model, SpectrumDto spectrum, Color spectrumColor, SpecInfo specInfo = null);
 
         /// <summary>
         /// Add to LineItemList (ZedGraph)
@@ -53,7 +53,7 @@ namespace Demo.AutoTest.services
         /// <param name="model"></param>
         /// <param name="spectrumNode"></param>
         /// <returns></returns>
-        bool AddLineItemToList(AcquireModuleDataInfo model, SpectrumNode spectrumNode);
+        bool AddLineItemToList(AcquireModuleState model, SpectrumNode spectrumNode);
 
         /// <summary>
         /// Find SpectrumList item
@@ -61,14 +61,14 @@ namespace Demo.AutoTest.services
         /// <param name="model"></param>
         /// <param name="spectrumId"></param>
         /// <returns></returns>
-        SpectrumNode FindSpectrum(AcquireModuleDataInfo model, string spectrumId);
+        SpectrumNode FindSpectrum(AcquireModuleState model, string spectrumId);
 
         /// <summary>
         /// 在graph上显示所有的光谱, Add checked treenode to LineItemList
         /// </summary>
         /// <param name="model"></param>
         /// <returns></returns>
-        bool ShowAllSpectrumLine(AcquireModuleDataInfo model);
+        bool ShowAllSpectrumLine(AcquireModuleState model);
 
         /// <summary>
         /// remove spectrum from 
@@ -76,9 +76,9 @@ namespace Demo.AutoTest.services
         /// </summary>
         /// <param name="model"></param>
         /// <param name="spectrumId"></param>
-        void RemoveSpectrum(AcquireModuleDataInfo model, string spectrumId);
+        void RemoveSpectrum(AcquireModuleState model, string spectrumId);
 
-        void AddSpectrumHistory(AcquireModuleDataInfo model, SpectrumDto spectrum);
+        void AddSpectrumHistory(AcquireModuleState model, SpectrumDto spectrum);
     }
 
     public class AcquireModuleService : IAcquireModuleService
@@ -94,7 +94,7 @@ namespace Demo.AutoTest.services
         }
 
 
-        public void AddRootSpectrumTreeNode(AcquireModuleDataInfo model)
+        public void AddRootSpectrumTreeNode(AcquireModuleState model)
         {
             if (model.SpectrumTreeNodes.Any(x => x.Id == 0 && x.ZedTypeBox == model.ZedTypeBox))
                 return;
@@ -119,7 +119,7 @@ namespace Demo.AutoTest.services
         /// </summary>
         /// <param name="spectrum"></param>
         /// <returns></returns>
-        public int AddSpectrumTreeNode(AcquireModuleDataInfo model, SpectrumDto spectrum, Color spectrumColor, SpecInfo specInfo = null)
+        public int AddSpectrumTreeNode(AcquireModuleState model, SpectrumDto spectrum, Color spectrumColor, SpecInfo specInfo = null)
         {
             if (spectrum == null) return -1;
 
@@ -400,7 +400,7 @@ namespace Demo.AutoTest.services
 
         }
 
-        public SpectrumNode FindSpectrum(AcquireModuleDataInfo model, string spectrumId)
+        public SpectrumNode FindSpectrum(AcquireModuleState model, string spectrumId)
         {
             if (model == null
                 || model.SpectrumList == null) return null;
@@ -414,7 +414,7 @@ namespace Demo.AutoTest.services
         /// <param name="model"></param>
         /// <param name="spectrumId"></param>
         /// <returns></returns>
-        public bool RemoveLineItemToList(AcquireModuleDataInfo model, string spectrumId)
+        public bool RemoveLineItemToList(AcquireModuleState model, string spectrumId)
         {
             if (model.LineItemList == null || model.LineItemList.Count < 1)
                 return false;
@@ -433,7 +433,7 @@ namespace Demo.AutoTest.services
         /// </summary>
         /// <param name="spectrum"></param>
         /// <returns></returns>
-        public bool AddLineItemToList(AcquireModuleDataInfo model, SpectrumDto spectrum, Color spectrumColor, SpecInfo specInfo = null)
+        public bool AddLineItemToList(AcquireModuleState model, SpectrumDto spectrum, Color spectrumColor, SpecInfo specInfo = null)
         {
             if (spectrum == null) return false;
 
@@ -470,7 +470,7 @@ namespace Demo.AutoTest.services
         /// <param name="model"></param>
         /// <param name="spectrumNode"></param>
         /// <returns></returns>
-        public bool AddLineItemToList(AcquireModuleDataInfo model, SpectrumNode spectrumNode)
+        public bool AddLineItemToList(AcquireModuleState model, SpectrumNode spectrumNode)
         {
             if (spectrumNode == null) return false;
 
@@ -501,7 +501,7 @@ namespace Demo.AutoTest.services
             return true;
         }
 
-        public bool ShowAllSpectrumLine(AcquireModuleDataInfo model)
+        public bool ShowAllSpectrumLine(AcquireModuleState model)
         {
             foreach (var item in model.SpectrumList)
             {
@@ -516,7 +516,7 @@ namespace Demo.AutoTest.services
         /// </summary>
         /// <param name="model"></param>
         /// <param name="spectrumId"></param>
-        public void RemoveSpectrum(AcquireModuleDataInfo model, string spectrumId)
+        public void RemoveSpectrum(AcquireModuleState model, string spectrumId)
         {
             var history = model.SpectrumHistory.FirstOrDefault(x => x.SpectrumId == spectrumId);
             if (history != null)
@@ -538,7 +538,7 @@ namespace Demo.AutoTest.services
             }
         }
 
-        public void AddSpectrumHistory(AcquireModuleDataInfo model, SpectrumDto spectrumDto)
+        public void AddSpectrumHistory(AcquireModuleState model, SpectrumDto spectrumDto)
         {
             var history = model.SpectrumHistory.FirstOrDefault(x => x.SpectrumId == spectrumDto.Id);
             if (history != null)

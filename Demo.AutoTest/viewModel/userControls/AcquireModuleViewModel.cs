@@ -39,7 +39,7 @@ namespace Demo.AutoTest.viewModel.userControls
 {
     public class AcquireModuleViewModel : NotifyObject
     {
-        private AcquireModuleDataInfo _model = new AcquireModuleDataInfo();   
+        private AcquireModuleState _model = new AcquireModuleState();   
         private IAcquireModuleService _acquireModuleService;
         private RightSpectrumListViewModel _rightSpectrumListViewModel;
         private TopLeftViewModel _topLeftViewModel;
@@ -149,7 +149,7 @@ namespace Demo.AutoTest.viewModel.userControls
             }
         }
 
-        public AcquireModuleDataInfo Model
+        public AcquireModuleState Model
         {
             get
             {
@@ -213,7 +213,7 @@ namespace Demo.AutoTest.viewModel.userControls
             _model.SpectrumTreeNodes.Clear();
             _model.ZedTypeBox = ZedTypeBox.D;
             _acquireModuleService.AddRootSpectrumTreeNode(_model);
-            _rightSpectrumListViewModel.AcquireModuleDataInfo = _model;
+            _rightSpectrumListViewModel.AcquireModuleState = _model;
            
             _rightSpectrumListViewModel.RefreshDataSource();
 
@@ -224,7 +224,7 @@ namespace Demo.AutoTest.viewModel.userControls
 
         private async Task InitializeHistoryGridView()
         {
-            _bottomHistoryAreaViewModel.AcquireModuleDataInfo = _model;
+            _bottomHistoryAreaViewModel.AcquireModuleState = _model;
             dbOperate = DBOperate.Instance();
             _model.SpectrumHistory.Clear();
 

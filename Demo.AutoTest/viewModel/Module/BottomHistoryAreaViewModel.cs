@@ -34,7 +34,7 @@ namespace Demo.AutoTest.viewModel.Module
             _localize = InjectionWpf.GetService<ILocalize>();
         }
 
-        public AcquireModuleDataInfo AcquireModuleDataInfo { get; set; } = new AcquireModuleDataInfo();
+        public AcquireModuleState AcquireModuleState { get; set; } = new AcquireModuleState();
         public ObservableCollection<HistorySpectrumBrowseStructuralBody> HistorySpectrum
         {
             get
@@ -51,7 +51,7 @@ namespace Demo.AutoTest.viewModel.Module
         {
             HistorySpectrum = new ObservableCollection<HistorySpectrumBrowseStructuralBody>();
            
-            foreach (var item in AcquireModuleDataInfo.SpectrumHistory)
+            foreach (var item in AcquireModuleState.SpectrumHistory)
             {
                 HistorySpectrum.Add(new HistorySpectrumBrowseStructuralBody()
                 {

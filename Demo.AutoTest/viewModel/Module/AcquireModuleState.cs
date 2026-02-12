@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace Demo.AutoTest.viewModel.Module
 {
-    public class AcquireModuleDataInfo:BindNotify
+    public class AcquireModuleState : BindNotify
     {
         public int NextNodeId()
         {
