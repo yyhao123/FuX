@@ -421,15 +421,6 @@ namespace Demo.AutoTest.Language {
         }
         
         /// <summary>
-        ///   查找类似 UV8000超瞬态光谱仪 的本地化字符串。
-        /// </summary>
-        internal static string 拉曼自动测试软件 {
-            get {
-                return ResourceManager.GetString("拉曼自动测试软件", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   查找类似 指令管理 的本地化字符串。
         /// </summary>
         internal static string 指令管理 {
@@ -516,6 +507,15 @@ namespace Demo.AutoTest.Language {
         internal static string 暗电流 {
             get {
                 return ResourceManager.GetString("暗电流", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 样例自动测试软件 的本地化字符串。
+        /// </summary>
+        internal static string 样例自动测试软件 {
+            get {
+                return ResourceManager.GetString("样例自动测试软件", resourceCulture);
             }
         }
         

@@ -110,7 +110,7 @@ namespace Demo.AutoTest.ViewModels.Windows
         private string systemTitle = $"Optosky - 拉曼自动测试软件";
         public string InitSystemTitle()
         {
-            return $"Optosky - {App.LanguageOperate.GetLanguageValue("拉曼自动测试软件")}";
+            return $"FuX - {App.LanguageOperate.GetLanguageValue("样例自动测试软件")}";
         }
 
         #region 菜单项

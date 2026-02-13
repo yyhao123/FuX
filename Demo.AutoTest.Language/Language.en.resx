@@ -132,8 +132,8 @@
   <data name="Help" xml:space="preserve">
     <value>Help</value>
   </data>
-  <data name="拉曼自动测试软件" xml:space="preserve">
-    <value>RamanAutoTestSoftware</value>
+  <data name="样例自动测试软件" xml:space="preserve">
+    <value>Example automatic testing software</value>
   </data>
   <data name="测试项" xml:space="preserve">
     <value>Test Item</value>
