@@ -1,0 +1,60 @@
+##################################################
+# .NET / WPF Project - Minimal Professional Template
+##################################################
+
+# Build output
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# VS Code
+.vscode/
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+.nuget/
+
+# Test Results
+TestResults/
+*.trx
+
+# Logs
+*.log
+
+# OS Files
+Thumbs.db
+Desktop.ini
+
+# Windows image cache
+*.cache
+
+# Copilot / temporary indices
+CopilotIndices/
+
+# Publish output
+publish/
+
+# Dotnet CLI artifacts
+*.runtimeconfig.dev.json
+
+##################################################
+# Optional (uncomment if needed)
+##################################################
+
+# Uncomment if you don't want to track launchSettings
+# Properties/launchSettings.json
+
+# Uncomment if you use local appsettings override
+# appsettings.Development.json
