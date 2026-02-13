@@ -1,4 +1,4 @@
-﻿using Demo.AutoTest.viewModel.Module;
+﻿using Demo.AutoTest.ViewModels.Modules;
 using Demo.Communication.constant;
 using Demo.Model.data;
 using FuX.Core.services;

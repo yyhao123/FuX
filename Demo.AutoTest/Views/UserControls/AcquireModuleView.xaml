@@ -1,0 +1,545 @@
+﻿<UserControl
+    x:Class="Demo.AutoTest.Views.UserControls.AcquireModuleView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:btn="clr-namespace:Demo.Windows.Controls.button;assembly=Demo.Windows.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:fluent="urn:fluent-ribbon"
+    xmlns:FuX="https://FuX.top"
+    xmlns:local="clr-namespace:Demo.AutoTest.Views.UserControls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:model="clr-namespace:Demo.AutoTest.ViewModels.UserControls"
+    xmlns:ui="http://materialdesigninxaml.net/winfx/xaml/themes"
+    FuX:ResxLocalizationProvider.DefaultAssembly="Demo.AutoTest.Language"
+    FuX:ResxLocalizationProvider.DefaultDictionary="Language"
+    mc:Ignorable="d">
+    <!--  视图模型绑定  -->
+    <UserControl.DataContext>
+        <model:AcquireModuleViewModel />
+    </UserControl.DataContext>
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/Fluent;component/Themes/Styles.xaml" />
+
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+
+        <!--  上方  -->
+        <Grid Grid.Row="0">
+            <GroupBox
+                Margin="5"
+                Padding="0,0,0,0"
+                ui:ElevationAssist.Elevation="Dp2"
+                ui:GroupBoxAssist.HeaderPadding="7"
+                Style="{StaticResource MaterialDesignCardGroupBox}">
+                <GroupBox.HeaderTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <ui:PackIcon Kind="TestTube" />
+                            <TextBlock
+                                Margin="5,0,0,0"
+                                HorizontalAlignment="Stretch"
+                                VerticalAlignment="Center"
+                                Text="{FuX:Loc 测试项}"
+                                TextAlignment="Center" />
+                        </StackPanel>
+                    </DataTemplate>
+                </GroupBox.HeaderTemplate>
+
+                <fluent:Ribbon>
+                    <fluent:Ribbon.QuickAccessItems>
+
+                        <fluent:QuickAccessMenuItem IsChecked="True" Target="{Binding ElementName=button}" />
+                    </fluent:Ribbon.QuickAccessItems>
+
+
+
+                    <fluent:Ribbon.ContextualGroups>
+                        <fluent:RibbonContextualTabGroup
+                            x:Name="contextGroup1"
+                            Background="Magenta"
+                            BorderBrush="Magenta"
+                            Foreground="Purple"
+                            Header="Generic context"
+                            Visibility="Visible" />
+
+                        <fluent:RibbonContextualTabGroup
+                            x:Name="contextGroup2"
+                            Background="Red"
+                            BorderBrush="Magenta"
+                            Foreground="Purple"
+                            Header="Generic context"
+                            Visibility="Visible" />
+
+                        <fluent:RibbonContextualTabGroup
+                            x:Name="contextGroup3"
+                            Background="Red"
+                            BorderBrush="Magenta"
+                            Foreground="Purple"
+                            Header="Generic context"
+                            Visibility="Visible" />
+
+                        <fluent:RibbonContextualTabGroup
+                            x:Name="contextGroup4"
+                            Background="Red"
+                            BorderBrush="Magenta"
+                            Foreground="Purple"
+                            Header="Generic context"
+                            Visibility="Visible" />
+                    </fluent:Ribbon.ContextualGroups>
+
+
+                    <fluent:RibbonTabItem Group="{Binding ElementName=contextGroup1}" Header="主页">
+                        <fluent:RibbonGroupBox Header="采集类型">
+                            <fluent:RadioButton Header="范围采集" IsChecked="True" />
+                            <fluent:RadioButton Header="定点采集" IsChecked="False" />
+                        </fluent:RibbonGroupBox>
+                        <fluent:RibbonGroupBox Header="采集功能">
+                            <fluent:Button Header="开始采集" Icon="{StaticResource 链接设备}" Command="{Binding SingleAcquireCommand}" />
+                            <fluent:Button Header="连续采集" Icon="{StaticResource 链接设备}" />
+                            <fluent:Button Header="停止采集" Icon="{StaticResource 链接设备}" />
+                            <fluent:Button Header="清除谱图" Icon="{StaticResource 链接设备}" />
+
+                        </fluent:RibbonGroupBox>
+                        <fluent:RibbonGroupBox Header="峰值">
+                            <fluent:Spinner
+                                fluent:InputControlProperties.InputWidth="75"
+                                Format="0 px"
+                                Header="信噪比阈值:"
+                                Icon="{DynamicResource Fluent.Ribbon.Images.Warning}"
+                                IsEnabled="False"
+                                KeyTip="KA"
+                                Value="{Binding BoundSpinnerValue}" />
+                            <fluent:Spinner
+                                fluent:InputControlProperties.InputWidth="75"
+                                Format="0 px"
+                                Header="强度阈值:"
+                                Icon="{DynamicResource Fluent.Ribbon.Images.Warning}"
+                                KeyTip="KB"
+                                SelectAllTextOnFocus="True"
+                                Value="{Binding BoundSpinnerValue}" />
+                            <fluent:Button Header="寻峰" Icon="{StaticResource 链接设备}" />
+                            <fluent:Button Header="撤销寻峰" Icon="{StaticResource 链接设备}" />
+                        </fluent:RibbonGroupBox>
+                        <fluent:RibbonGroupBox Header="暗背景">
+                            <fluent:Button Header="暗背景" Icon="{StaticResource 链接设备}" />
+                        </fluent:RibbonGroupBox>
+                    </fluent:RibbonTabItem>
+
+                    <fluent:RibbonTabItem Group="{Binding ElementName=contextGroup2}" Header="设置">
+                        <fluent:RibbonGroupBox Header="常用设置">
+                            <fluent:DropDownButton
+                                fluent:KeyTip.Keys="C"
+                                Header="X轴单位"
+                                Icon="{StaticResource 链接设备}"
+                                LargeIcon="{StaticResource 链接设备}"
+                                ResizeMode="Both">
+                                <fluent:Button
+                                    fluent:KeyTip.Keys="A"
+                                    Header="波长"
+                                    Icon="{StaticResource 链接设备}"
+                                    Size="Middle" />
+                                <fluent:Button
+                                    fluent:KeyTip.Keys="B"
+                                    Header="范围"
+                                    Size="Middle" />
+                            </fluent:DropDownButton>
+                            <fluent:DropDownButton
+                                fluent:KeyTip.Keys="C"
+                                Header="曲线数目"
+                                Icon="{StaticResource 链接设备}"
+                                LargeIcon="{StaticResource 链接设备}"
+                                ResizeMode="Both">
+                                <fluent:Button
+                                    fluent:KeyTip.Keys="A"
+                                    Header="1"
+                                    Icon="{StaticResource 链接设备}"
+                                    Size="Middle" />
+                                <fluent:Button
+                                    fluent:KeyTip.Keys="B"
+                                    Header="2"
+                                    Size="Middle" />
+                                <fluent:Button
+                                    fluent:KeyTip.Keys="B"
+                                    Header="3"
+                                    Size="Middle" />
+                                <UniformGrid>
+                                    <fluent:Spinner
+                                        fluent:InputControlProperties.InputWidth="75"
+                                        Format="0 px "
+                                        Header="其他:"
+                                        Icon="{DynamicResource Fluent.Ribbon.Images.Warning}"
+                                        KeyTip="KB"
+                                        SelectAllTextOnFocus="True"
+                                        Value="{Binding BoundSpinnerValue}" />
+                                    <fluent:Button
+                                        fluent:KeyTip.Keys="B"
+                                        Header="确认"
+                                        Size="Middle" />
+                                </UniformGrid>
+
+
+                            </fluent:DropDownButton>
+                        </fluent:RibbonGroupBox>
+                    </fluent:RibbonTabItem>
+
+                    <fluent:RibbonTabItem Group="{Binding ElementName=contextGroup3}" Header="算法">
+                        <fluent:RibbonGroupBox Header="Second group">
+                            <fluent:Button x:Name="button3" Header="button2" />
+                        </fluent:RibbonGroupBox>
+                    </fluent:RibbonTabItem>
+                </fluent:Ribbon>
+                <!--<ScrollViewer
+                    Height="auto"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    CanContentScroll="true"
+                    HorizontalScrollBarVisibility="Auto"
+                    VerticalScrollBarVisibility="Disabled">
+
+                -->
+                <!--<ItemsControl
+                        HorizontalAlignment="Center"
+                        ui:ButtonAssist.CornerRadius="{DynamicResource WindowCornerRadius}"
+                        ItemsSource="{Binding ItemsControlItemsSource}">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <StackPanel Margin="5" Orientation="Horizontal" />
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <RadioButton
+                                    Padding="5,5,5,8"
+                                    Command="{Binding LeftMouseClickCommand}"
+                                    CommandParameter="{Binding}"
+                                    GroupName="TabGroup"
+                                    IsChecked="{Binding IsChecked}"
+                                    IsEnabled="{Binding IsEnabled}"
+                                    Style="{DynamicResource MaterialDesignTabRadioButton}">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition />
+                                            <RowDefinition Height="*" />
+                                        </Grid.RowDefinitions>
+                                        <Image
+                                            Width="24"
+                                            Height="24"
+                                            HorizontalAlignment="Center"
+                                            Source="{Binding Icon}"
+                                            Stretch="Fill" />
+                                        <TextBlock
+                                            Grid.Row="1"
+                                            Margin="0,10,0,0"
+                                            HorizontalAlignment="Center"
+                                            Text="{Binding Title}"
+                                            TextAlignment="Center" />
+                                    </Grid>
+                                </RadioButton>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>-->
+                <!--
+                </ScrollViewer>-->
+
+            </GroupBox>
+        </Grid>
+
+        <!--  下方  -->
+        <ui:DrawerHost Grid.Row="1" OpenMode="Standard">
+            <ui:DrawerHost.RightDrawerContent>
+                <ui:Card Width="400" UniformCornerRadius="0">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                        </Grid.RowDefinitions>
+                        <GroupBox
+                            Grid.Row="0"
+                            Margin="0,0,5,5"
+                            ui:ElevationAssist.Elevation="Dp2"
+                            ui:GroupBoxAssist.HeaderPadding="7"
+                            Style="{StaticResource MaterialDesignCardGroupBox}">
+                            <GroupBox.HeaderTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal">
+                                        <ui:PackIcon Kind="Devices" />
+                                        <TextBlock
+                                            Margin="5,0,0,0"
+                                            HorizontalAlignment="Stretch"
+                                            VerticalAlignment="Center"
+                                            Text="{FuX:Loc 设备}"
+                                            TextAlignment="Center" />
+                                    </StackPanel>
+                                </DataTemplate>
+                            </GroupBox.HeaderTemplate>
+                            <Grid>
+                                <ContentControl Content="{Binding RightParamView}" />
+                            </Grid>
+
+                        </GroupBox>
+                        <GroupBox
+                            Grid.Row="1"
+                            Margin="0,0,5,5"
+                            ui:ElevationAssist.Elevation="Dp2"
+                            ui:GroupBoxAssist.HeaderPadding="7"
+                            Style="{StaticResource MaterialDesignCardGroupBox}">
+                            <GroupBox.HeaderTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal">
+                                        <ui:PackIcon Kind="Braille" />
+                                        <TextBlock
+                                            Margin="5,0,0,0"
+                                            HorizontalAlignment="Stretch"
+                                            VerticalAlignment="Center"
+                                            Text="{FuX:Loc 操作}"
+                                            TextAlignment="Center" />
+                                    </StackPanel>
+                                </DataTemplate>
+                            </GroupBox.HeaderTemplate>
+
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+
+                                <!--<btn:ButtonControl
+                              Command="{Binding Gather}"
+                              Content="{lang:Loc 采集}"
+                              CornerRadius="{DynamicResource WindowCornerRadius}"
+                              Icon="{DynamicResource query}" />-->
+                            </Grid>
+
+                        </GroupBox>
+                        <GroupBox
+                            Grid.Row="2"
+                            Margin="0,0,5,5"
+                            ui:ElevationAssist.Elevation="Dp2"
+                            ui:GroupBoxAssist.HeaderPadding="7"
+                            Style="{StaticResource MaterialDesignCardGroupBox}">
+                            <GroupBox.HeaderTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal">
+                                        <ui:PackIcon Kind="StateMachine" />
+                                        <TextBlock
+                                            Margin="5,0,0,0"
+                                            HorizontalAlignment="Stretch"
+                                            VerticalAlignment="Center"
+                                            Text="{FuX:Loc 状态}"
+                                            TextAlignment="Center" />
+                                    </StackPanel>
+                                </DataTemplate>
+                            </GroupBox.HeaderTemplate>
+                        </GroupBox>
+                        <GroupBox
+                            Grid.Row="3"
+                            Margin="0,0,5,5"
+                            ui:ElevationAssist.Elevation="Dp2"
+                            ui:GroupBoxAssist.HeaderPadding="7"
+                            Style="{StaticResource MaterialDesignCardGroupBox}">
+                            <GroupBox.HeaderTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal">
+                                        <ui:PackIcon Kind="FileCheckOutline" />
+                                        <TextBlock
+                                            Margin="5,0,0,0"
+                                            HorizontalAlignment="Stretch"
+                                            VerticalAlignment="Center"
+                                            Text="{FuX:Loc 光谱列表}"
+                                            TextAlignment="Center" />
+                                    </StackPanel>
+                                </DataTemplate>
+                            </GroupBox.HeaderTemplate>
+                            <Grid>
+                                <ContentControl Content="{Binding RightSpectrumListView}" />
+                            </Grid>
+                        </GroupBox>
+                    </Grid>
+                </ui:Card>
+            </ui:DrawerHost.RightDrawerContent>
+            <GroupBox
+                Margin="5,0,5,5"
+                ui:ElevationAssist.Elevation="Dp2"
+                ui:GroupBoxAssist.HeaderPadding="7"
+                Style="{StaticResource MaterialDesignCardGroupBox}">
+                <GroupBox.HeaderTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto" />
+                                <ColumnDefinition Width="auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <ui:PackIcon Grid.Column="0" Kind="Finance" />
+                            <TextBlock
+                                Grid.Column="1"
+                                Margin="5,0,0,0"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Text="{FuX:Loc 图表}"
+                                TextAlignment="Center" />
+                            <Button
+                                Grid.Column="2"
+                                Width="16"
+                                Height="16"
+                                Margin="0"
+                                Padding="0"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Center"
+                                HorizontalContentAlignment="Center"
+                                VerticalContentAlignment="Center"
+                                CommandParameter="{x:Static Dock.Right}">
+                                <Button.Style>
+                                    <Style BasedOn="{StaticResource MaterialDesignIconForegroundButton}" TargetType="Button">
+                                        <Setter Property="Command" Value="{x:Static ui:DrawerHost.OpenDrawerCommand}" />
+                                        <Setter Property="Content" Value="{ui:PackIcon Kind=MenuOpen, Size=16}" />
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding RelativeSource={RelativeSource AncestorType=ui:DrawerHost}, Path=(ui:DrawerHost.IsRightDrawerOpen)}" Value="True">
+                                                <Setter Property="Command" Value="{x:Static ui:DrawerHost.CloseDrawerCommand}" />
+                                                <Setter Property="Content" Value="{ui:PackIcon Kind=MenuClose, Size=16}" />
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Button.Style>
+                            </Button>
+                        </Grid>
+                    </DataTemplate>
+                </GroupBox.HeaderTemplate>
+                <ui:DialogHost
+                    Name="DialogHostContainer"
+                    Grid.Row="1"
+                    Width="Auto"
+                    Height="Auto"
+                    CacheMode="BitmapCache"
+                    CloseOnClickAway="True"
+                    DialogContentUniformCornerRadius="{DynamicResource WindowCornerRadius_Double}"
+                    DialogTheme="Inherit"
+                    Identifier="ChartLineOperate"
+                    RenderOptions.BitmapScalingMode="Unspecified"
+                    RenderOptions.ClearTypeHint="Enabled"
+                    RenderOptions.EdgeMode="Unspecified"
+                    SnapsToDevicePixels="True"
+                    UseLayoutRounding="True">
+
+                    <ContentControl Content="{Binding MiddleGraphArea}" />
+
+                </ui:DialogHost>
+
+            </GroupBox>
+        </ui:DrawerHost>
+
+        <ui:DrawerHost Grid.Row="2" OpenMode="Standard">
+            <ui:DrawerHost.BottomDrawerContent>
+                <ui:Card UniformCornerRadius="0">
+                    <Grid>
+                        <ContentControl Content="{Binding BottomHistoryAreaView}" />
+
+                    </Grid>
+                </ui:Card>
+            </ui:DrawerHost.BottomDrawerContent>
+            <!--<GroupBox
+                Margin="0,0,0,0"
+                ui:ElevationAssist.Elevation="Dp2"
+                ui:GroupBoxAssist.HeaderPadding="7"
+                Style="{StaticResource MaterialDesignCardGroupBox}">
+                <GroupBox.HeaderTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto" />
+                                <ColumnDefinition Width="auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <ui:PackIcon Grid.Column="0" Kind="Finance" />
+                            <TextBlock
+                                Grid.Column="1"
+                                Margin="5,0,0,0"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Text="{lang:Loc 历史记录}"
+                                TextAlignment="Center" />
+                            <Button
+                                Grid.Column="2"
+                                Width="16"
+                                Height="16"
+                                Margin="0"
+                                Padding="0"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Center"
+                                HorizontalContentAlignment="Center"
+                                VerticalContentAlignment="Center"
+                                CommandParameter="{x:Static Dock.Bottom}">
+                                <Button.Style>
+                                    <Style BasedOn="{StaticResource MaterialDesignIconForegroundButton}" TargetType="Button">
+                                        <Setter Property="Command" Value="{x:Static ui:DrawerHost.OpenDrawerCommand}" />
+                                        <Setter Property="Content" Value="{ui:PackIcon Kind=MenuOpen, Size=16}" />
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding RelativeSource={RelativeSource AncestorType=ui:DrawerHost}, Path=(ui:DrawerHost.IsBottomDrawerOpen)}" Value="True">
+                                                <Setter Property="Command" Value="{x:Static ui:DrawerHost.CloseDrawerCommand}" />
+                                                <Setter Property="Content" Value="{ui:PackIcon Kind=MenuClose, Size=16}" />
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Button.Style>
+                            </Button>
+                        </Grid>
+                    </DataTemplate>
+                </GroupBox.HeaderTemplate>
+
+
+            </GroupBox>-->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <ui:PackIcon Grid.Column="0" Kind="Finance" />
+                <TextBlock
+                    Grid.Column="1"
+                    Margin="5,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Text="{FuX:Loc 历史记录}"
+                    TextAlignment="Center" />
+                <Button
+                    Grid.Column="2"
+                    Width="16"
+                    Height="16"
+                    Margin="0,0,7,0"
+                    Padding="0"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Center"
+                    HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center"
+                    CommandParameter="{x:Static Dock.Bottom}">
+                    <Button.Style>
+                        <Style BasedOn="{StaticResource MaterialDesignIconForegroundButton}" TargetType="Button">
+                            <Setter Property="Command" Value="{x:Static ui:DrawerHost.OpenDrawerCommand}" />
+                            <Setter Property="Content" Value="{ui:PackIcon Kind=MenuOpen, Size=16}" />
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding RelativeSource={RelativeSource AncestorType=ui:DrawerHost}, Path=(ui:DrawerHost.IsBottomDrawerOpen)}" Value="True">
+                                    <Setter Property="Command" Value="{x:Static ui:DrawerHost.CloseDrawerCommand}" />
+                                    <Setter Property="Content" Value="{ui:PackIcon Kind=MenuClose, Size=16}" />
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+            </Grid>
+
+        </ui:DrawerHost>
+    </Grid>
+</UserControl>

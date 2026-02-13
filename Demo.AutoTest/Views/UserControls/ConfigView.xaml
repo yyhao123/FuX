@@ -1,0 +1,152 @@
+﻿<UserControl
+    x:Class="Demo.AutoTest.Views.UserControls.ConfigView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:FuX="https://FuX.top"
+    xmlns:local="clr-namespace:Demo.AutoTest.Views.UserControls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:model="clr-namespace:Demo.AutoTest.ViewModels.UserControls"
+    xmlns:ui="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:view="clr-namespace:Demo.AutoTest.Views.UserControls"
+    FuX:ResxLocalizationProvider.DefaultAssembly="Demo.AutoTest.Language"
+    FuX:ResxLocalizationProvider.DefaultDictionary="Language"
+    mc:Ignorable="d">
+    <!--  视图模型绑定  -->
+    <UserControl.DataContext>
+        <model:ConfigViewModel />
+    </UserControl.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!--  上方  -->
+        <Grid Grid.Row="0">
+            <GroupBox
+                Margin="5"
+                Padding="0,0,0,0"
+                ui:ElevationAssist.Elevation="Dp2"
+                ui:GroupBoxAssist.HeaderPadding="7"
+                Style="{StaticResource MaterialDesignCardGroupBox}">
+                <GroupBox.HeaderTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <ui:PackIcon Kind="TestTube" />
+                            <TextBlock
+                                Margin="5,0,0,0"
+                                HorizontalAlignment="Stretch"
+                                VerticalAlignment="Center"
+                                Text="{FuX:Loc 配置管理}"
+                                TextAlignment="Center" />
+                        </StackPanel>
+                    </DataTemplate>
+                </GroupBox.HeaderTemplate>
+
+                <ScrollViewer
+                    Height="auto"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    CanContentScroll="true"
+                    HorizontalScrollBarVisibility="Auto"
+                    VerticalScrollBarVisibility="Disabled">
+
+                    <ItemsControl
+                        HorizontalAlignment="Center"
+                        ui:ButtonAssist.CornerRadius="{DynamicResource WindowCornerRadius}"
+                        ItemsSource="{Binding ItemsControlItemsSource}">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <StackPanel Margin="5" Orientation="Horizontal" />
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <RadioButton
+                                    Padding="5,5,5,8"
+                                    Command="{Binding LeftMouseClickCommand}"
+                                    GroupName="TabGroup"
+                                    IsChecked="{Binding IsChecked}"
+                                    IsEnabled="{Binding IsEnabled}"
+                                    Style="{StaticResource MaterialDesignTabRadioButton}">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition />
+                                            <RowDefinition Height="*" />
+                                        </Grid.RowDefinitions>
+                                        <Image
+                                            Width="24"
+                                            Height="24"
+                                            HorizontalAlignment="Center"
+                                            Source="{Binding Icon}"
+                                            Stretch="Fill" />
+                                        <TextBlock
+                                            Grid.Row="1"
+                                            Margin="0,10,0,0"
+                                            HorizontalAlignment="Center"
+                                            Text="{Binding Title}"
+                                            TextAlignment="Center" />
+                                    </Grid>
+                                </RadioButton>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>
+
+            </GroupBox>
+        </Grid>
+
+        <!--  下方  -->
+        <ui:DrawerHost Grid.Row="1" OpenMode="Standard">
+
+            <GroupBox
+                Margin="5,0,5,5"
+                ui:ElevationAssist.Elevation="Dp2"
+                ui:GroupBoxAssist.HeaderPadding="7"
+                Style="{StaticResource MaterialDesignCardGroupBox}">
+                <GroupBox.HeaderTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto" />
+                                <ColumnDefinition Width="auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <ui:PackIcon Grid.Column="0" Kind="Finance" />
+                            <TextBlock
+                                Grid.Column="1"
+                                Margin="5,0,0,0"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Text="{FuX:Loc 显示区}"
+                                TextAlignment="Center" />
+
+                        </Grid>
+                    </DataTemplate>
+                </GroupBox.HeaderTemplate>
+                <ui:DialogHost
+                    Name="DialogHostContainer"
+                    Grid.Row="1"
+                    Width="Auto"
+                    Height="Auto"
+                    CacheMode="BitmapCache"
+                    CloseOnClickAway="True"
+                    DialogContentUniformCornerRadius="{DynamicResource WindowCornerRadius_Double}"
+                    DialogTheme="Inherit"
+                    Identifier="ChartLineOperate"
+                    RenderOptions.BitmapScalingMode="Unspecified"
+                    RenderOptions.ClearTypeHint="Enabled"
+                    RenderOptions.EdgeMode="Unspecified"
+                    SnapsToDevicePixels="True"
+                    UseLayoutRounding="True">
+
+                    <ContentControl Content="{Binding MiddleGraphArea}" />
+
+
+                </ui:DialogHost>
+
+            </GroupBox>
+        </ui:DrawerHost>
+    </Grid>
+</UserControl>

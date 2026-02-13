@@ -14,16 +14,16 @@
     <Compile Update="view\userControls\bars\DevCmdInfoView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="view\userControls\bars\subLeftBottomView.xaml.cs">
+    <Compile Update="view\userControls\bars\LeftBottomBarView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="view\userControls\bars\subRightBottomView.xaml.cs">
+    <Compile Update="view\userControls\bars\RightBottomBarView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="view\userControls\bars\subTopLeftView.xaml.cs">
+    <Compile Update="view\userControls\bars\TopLeftBarView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="view\userControls\bars\subTopRightView.xaml.cs">
+    <Compile Update="view\userControls\bars\TopRightBarView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="view\userControls\ConfigView.xaml.cs">
@@ -32,7 +32,7 @@
     <Compile Update="view\userControls\MiddleGraphArea.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="view\userControls\RightPram.xaml.cs">
+    <Compile Update="view\userControls\RightParamView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="view\userControls\TestView.xaml.cs">

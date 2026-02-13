@@ -1,13 +1,13 @@
 ﻿using Demo.AutoTest.Core.handler;
 using Demo.AutoTest.services;
-using Demo.AutoTest.view.Module;
-using Demo.AutoTest.view.userControls;
-using Demo.AutoTest.view.userControls.bars;
-using Demo.AutoTest.view.windows;
-using Demo.AutoTest.viewModel.Module;
-using Demo.AutoTest.viewModel.userControls;
-using Demo.AutoTest.viewModel.userControls.bars;
-using Demo.AutoTest.viewModel.windows;
+using Demo.AutoTest.Views.Modules;
+using Demo.AutoTest.Views.UserControls;
+using Demo.AutoTest.Views.UserControls.Bars;
+using Demo.AutoTest.Views.Windows;
+using Demo.AutoTest.ViewModels.Modules;
+using Demo.AutoTest.ViewModels.UserControls;
+using Demo.AutoTest.ViewModels.UserControls.Bars;
+using Demo.AutoTest.ViewModels.Windows;
 using Demo.Driver.service;
 using Demo.Windows.Core.handler;
 using FuX.Core.db;
@@ -80,12 +80,12 @@ namespace Demo.AutoTest
             {
                 //注入usercontrol
                 
-                InjectionWpf.UserControl<RightPram, RightPramViewModel>(true);
+                InjectionWpf.UserControl<RightParamView, RightParamViewModel>(true);
                 InjectionWpf.UserControl<RightSpectrumListView, RightSpectrumListViewModel>(true);
-                InjectionWpf.UserControl<subTopLeftView, TopLeftViewModel>(true);
-                InjectionWpf.UserControl<subTopRightView, TopRightViewModel>(true);
-                InjectionWpf.UserControl<subRightBottomView, RightBottomViewModel>(true);
-                InjectionWpf.UserControl<subLeftBottomView, LeftBottomViewModel>(true);
+                InjectionWpf.UserControl<TopLeftBarView, TopLeftBarViewModel>(true);
+                InjectionWpf.UserControl<TopRightBarView, TopRightBarViewModel>(true);
+                InjectionWpf.UserControl<RightBottomBarView, RightBottomBarViewModel>(true);
+                InjectionWpf.UserControl<LeftBottomBarView, LeftBottomBarViewModel>(true);
                 InjectionWpf.UserControl<BottomHistoryAreaView, BottomHistoryAreaViewModel>(true);
                 InjectionWpf.UserControl<DevCmdInfoView, DevCmdInfoViewModel>(true);
                 InjectionWpf.UserControl<MiddleGraphArea, MiddleGraphAreaViewModel>(true);
