@@ -318,16 +318,19 @@ namespace FuX.Core.db
                 {
                     return EndOperate(false, message);
                 }
-                //创建文件夹
-                if (!System.IO.Directory.Exists(basics.DBFilePath))
-                {
-                    System.IO.Directory.CreateDirectory(basics.DBFilePath);
-                }
+                ////创建文件夹
+                //if (!System.IO.Directory.Exists(basics.DBFilePath))
+                //{
+                //    System.IO.Directory.CreateDirectory(basics.DBFilePath);
+                //}
+                basics.EnsureDbExistsAndMigrateIfNeeded();
+
+                var cs = $"Data Source={basics.DBFullPath};";
                 //sqlsugar 对象实例化
                 sqlSugar = new SqlSugarClient(new ConnectionConfig
                 {
                     DbType = DbType.Sqlite,
-                    ConnectionString = connectionString,
+                    ConnectionString = cs,
                     InitKeyType = InitKeyType.Attribute,
                     IsAutoCloseConnection = false
                 });
