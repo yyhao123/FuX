@@ -1,20 +1,20 @@
-# Demo.AutoTest View / ViewModel 命名整理建议
+﻿# Demo.AutoTest View / ViewModel 命名整理建议
 
 > 目标：统一 `View` 与 `ViewModel` 的命名规则，降低维护成本，避免同名/错名导致的理解和导航困难。
 
 ## 1. 现状问题（基于当前代码）
 
 1. **文件名与类型名不一致**
-   - `viewModel/Module/AcquireModuleViewModel.cs` 中实际类型为 `AcquireModuleDataInfo`，不是 `AcquireModuleViewModel`。
+   - `ViewModels/Module/AcquireModuleViewModel.cs` 中实际类型为 `AcquireModuleDataInfo`，不是 `AcquireModuleViewModel`。
 2. **同名 ViewModel 重复且语义冲突**
-   - `viewModel/userControls/AcquireModuleViewModel.cs` 中存在真正的 `AcquireModuleViewModel`。
+   - `ViewModels/userControls/AcquireModuleViewModel.cs` 中存在真正的 `AcquireModuleViewModel`。
    - 与上面的文件名冲突，导致“一个名字两层含义”。
 3. **大小写/风格不统一**
-   - `subTopLeftView`、`subTopRightView`、`subLeftBottomView`、`subRightBottomView` 采用小写开头，未使用 PascalCase。
+   - `TopLeftBarView`、`TopRightBarView`、`LeftBottomBarView`、`RightBottomBarView` 采用小写开头，未使用 PascalCase。
 4. **拼写不明确**
-   - `RightPram` / `RightPramViewModel` 中 `Pram` 疑似 `Param` 的拼写简写，不利于团队理解和搜索。
+   - `RightParamView` / `RightParamViewModel` 中 `Pram` 疑似 `Param` 的拼写简写，不利于团队理解和搜索。
 5. **目录语义与命名不对齐**
-   - 已有 `view/Module` + `viewModel/Module`，也有 `view/userControls` + `viewModel/userControls`；
+   - 已有 `view/Module` + `ViewModels/Module`，也有 `view/userControls` + `ViewModels/userControls`；
    - 但类型命名有时体现“模块”（Module），有时体现“控件”（View），粒度不一致。
 
 ## 2. 推荐命名规范（建议统一执行）
@@ -30,40 +30,40 @@
 ### 2.2 目录建议
 
 - `view/Module/*View.xaml`
-- `viewModel/Module/*ViewModel.cs`
+- `ViewModels/Module/*ViewModel.cs`
 - `view/userControls/bars/*View.xaml`
-- `viewModel/userControls/bars/*ViewModel.cs`
-- `viewModel/state/*State.cs`（承载页面状态）
+- `ViewModels/userControls/bars/*ViewModel.cs`
+- `ViewModels/state/*State.cs`（承载页面状态）
 
 ## 3. 具体重命名建议（可直接落地）
 
 ### 3.1 明确区分“页面逻辑”与“状态模型”
 
-- `viewModel/Module/AcquireModuleViewModel.cs`（当前类型：`AcquireModuleDataInfo`）
-  - **改为**：`viewModel/state/AcquireModuleState.cs`
+- `ViewModels/Module/AcquireModuleViewModel.cs`（当前类型：`AcquireModuleDataInfo`）
+  - **改为**：`ViewModels/state/AcquireModuleState.cs`
   - 类型名：`AcquireModuleState`
-- 在 `viewModel/userControls/AcquireModuleViewModel.cs` 中：
+- 在 `ViewModels/userControls/AcquireModuleViewModel.cs` 中：
   - `private AcquireModuleDataInfo _model` -> `private AcquireModuleState _state`
   - `public AcquireModuleDataInfo Model` -> `public AcquireModuleState State`
 
 ### 3.2 bars 子视图统一 PascalCase
 
-- `subTopLeftView` -> `TopLeftBarView`
-- `subTopRightView` -> `TopRightBarView`
-- `subLeftBottomView` -> `LeftBottomBarView`
-- `subRightBottomView` -> `RightBottomBarView`
+- `TopLeftBarView` -> `TopLeftBarView`
+- `TopRightBarView` -> `TopRightBarView`
+- `LeftBottomBarView` -> `LeftBottomBarView`
+- `RightBottomBarView` -> `RightBottomBarView`
 
 对应 ViewModel（保持对称）：
 
-- `TopLeftViewModel` -> `TopLeftBarViewModel`（可选）
-- `TopRightViewModel` -> `TopRightBarViewModel`
-- `LeftBottomViewModel` -> `LeftBottomBarViewModel`
-- `RightBottomViewModel` -> `RightBottomBarViewModel`
+- `TopLeftBarViewModel` -> `TopLeftBarViewModel`（可选）
+- `TopRightBarViewModel` -> `TopRightBarViewModel`
+- `LeftBottomBarViewModel` -> `LeftBottomBarViewModel`
+- `RightBottomBarViewModel` -> `RightBottomBarViewModel`
 
 ### 3.3 `Pram` 统一为 `Param`（或 `Parameter`）
 
-- `RightPram` -> `RightParamView`（或 `RightParameterView`）
-- `RightPramViewModel` -> `RightParamViewModel`（或 `RightParameterViewModel`）
+- `RightParamView` -> `RightParamView`（或 `RightParameterView`）
+- `RightParamViewModel` -> `RightParamViewModel`（或 `RightParameterViewModel`）
 - 同步替换变量、字段、方法中 `Pram`。
 
 ## 4. 渐进式迁移策略（避免一次性大改）
