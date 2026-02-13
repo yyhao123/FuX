@@ -31,7 +31,7 @@ namespace Demo.AutoTest.ViewModels.UserControls.Bars
 
             if (!chartOperate.On().GetDetails(out string? message))
             {
-                Windows.Controls.message.MessageBox.Show(message, App.LanguageOperate.GetLanguageValue("提示"), Windows.Controls.@enum.MessageBoxButton.OK, Windows.Controls.@enum.MessageBoxImage.Error);
+                Demo.Windows.Controls.message.MessageBox.Show(message, App.LanguageOperate.GetLanguageValue("提示"), Demo.Windows.Controls.@enum.MessageBoxButton.OK, Demo.Windows.Controls.@enum.MessageBoxImage.Error);
             }
             // chartOperate.ShowSampleData();
            

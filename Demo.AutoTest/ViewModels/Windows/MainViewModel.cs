@@ -84,7 +84,7 @@ namespace Demo.AutoTest.ViewModels.Windows
         /// <summary>
         /// 皮肤切换触发
         /// </summary>
-        private Task SkinHandler_OnSkinEventAsync(object? sender, Windows.Core.data.EventSkinResult e)
+        private Task SkinHandler_OnSkinEventAsync(object? sender, Demo.Windows.Core.data.EventSkinResult e)
         {
             if (e.GetDetails(out SkinType? skin))
             {

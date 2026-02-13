@@ -38,7 +38,7 @@ namespace Demo.AutoTest.ViewModels.UserControls
 
             if (!chartOperate.On().GetDetails(out string? message))
             {
-                Windows.Controls.message.MessageBox.Show(message, App.LanguageOperate.GetLanguageValue("提示"), Windows.Controls.@enum.MessageBoxButton.OK, Windows.Controls.@enum.MessageBoxImage.Error);
+                Demo.Windows.Controls.message.MessageBox.Show(message, App.LanguageOperate.GetLanguageValue("提示"), Demo.Windows.Controls.@enum.MessageBoxButton.OK, Demo.Windows.Controls.@enum.MessageBoxImage.Error);
             }
 
             //if (!operate.On().GetDetails(out message))
@@ -87,7 +87,7 @@ namespace Demo.AutoTest.ViewModels.UserControls
             var result = await operate.GatherAsync(1000);
             if (!result.GetDetails(out string? message, out object? data))
             {
-                await Windows.Controls.message.MessageBox.Show(message, App.LanguageOperate.GetLanguageValue("提示"), Windows.Controls.@enum.MessageBoxButton.OK, Windows.Controls.@enum.MessageBoxImage.Error);
+                await Demo.Windows.Controls.message.MessageBox.Show(message, App.LanguageOperate.GetLanguageValue("提示"), Demo.Windows.Controls.@enum.MessageBoxButton.OK, Demo.Windows.Controls.@enum.MessageBoxImage.Error);
             }
             else
             {
