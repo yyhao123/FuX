@@ -1,4 +1,4 @@
-﻿using Demo.AutoTest.viewModel.userControls;
+﻿using Demo.AutoTest.ViewModels.UserControls;
 using Demo.Windows.Controls.property.wpf;
 using FuX.Core.handler;
 using FuX.Model.attribute;
